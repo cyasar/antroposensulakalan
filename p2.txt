@@ -1,0 +1,314 @@
+Sen profesyonel bir web tasarımcısı, akademik etkinlik web sitesi geliştiricisi, UI/UX uzmanı ve çok dilli web arayüzü mimarısın.
+
+Aşağıdaki akademik çalıştay için modern, kurumsal, bilimsel kimliği güçlü, çok dilli ve responsive bir web sitesi tasarla ve kodla.
+
+ÇALIŞTAY ADI:
+Türkiye’de Antroposen Çağında Sulak Alanlarda Ekolojik Riskler Çalıştayı
+
+İNGİLİZCE ADI:
+Workshop on Ecological Risks in Wetlands in Türkiye in the Anthropocene
+
+ALT BAŞLIK:
+Doç. Dr. T. Ahmet Ertek Onuruna
+
+İNGİLİZCE ALT BAŞLIK:
+In Honor of Assoc. Prof. Dr. T. Ahmet Ertek
+
+DÜZENLEME KURULU BAŞKANI:
+Prof. Dr. Ahmet Evren ERGİNAL
+Çanakkale Onsekiz Mart Üniversitesi
+Eğitim Fakültesi, Coğrafya Eğitimi ABD
+
+TARİH:
+22–24 Ekim 2026
+
+İNGİLİZCE TARİH:
+22–24 October 2026
+
+YER:
+Çanakkale Onsekiz Mart Üniversitesi
+Eğitim Fakültesi, Anafartalar Yerleşkesi, Çanakkale
+
+İNGİLİZCE YER:
+Çanakkale Onsekiz Mart University
+Faculty of Education, Anafartalar Campus, Çanakkale, Türkiye
+
+WEB SİTESİ DİLLERİ:
+Web sitesi ilk aşamada iki dilli olsun:
+1. Türkçe
+2. İngilizce
+
+Daha sonra yeni diller kolayca eklenebilecek şekilde yapı kurulsun.
+
+ÇOK DİLLİ YAPI İSTEĞİ:
+- Sayfanın sağ üst kısmında dil seçici olsun: TR | EN
+- Dil değiştirildiğinde tüm menü, başlıklar, butonlar ve içerikler değişsin.
+- HTML içinde `data-i18n` mantığı veya JavaScript tabanlı bir çeviri nesnesi kullanılabilir.
+- Kod yapısı ileride Fransızca, Almanca veya başka diller eklenebilecek biçimde tasarlansın.
+- SEO açısından HTML `lang` değeri seçilen dile göre güncellensin.
+- Sayfa başlığı ve meta açıklaması da dile göre değişsin.
+- Türkçe karakter desteği kusursuz olsun.
+- İngilizce metinler akademik, doğal ve profesyonel olsun.
+
+TASARIM DİLİ:
+- Akademik, zarif, güven veren ve modern bir tasarım olsun.
+- Sulak alanlar, göller, deltalar, sazlıklar, su, ekolojik denge, iklim değişikliği ve Antroposen temasını görsel olarak hissettirsin.
+- Renk paleti: koyu lacivert, derin yeşil, su mavisi, açık gri ve beyaz.
+- Tasarım sade ama etkileyici olsun.
+- Üniversite, bilimsel çalıştay ve çevresel risk teması güçlü biçimde hissedilsin.
+- Aşırı renkli, amatör veya festival havasında olmasın.
+- Mobil, tablet ve masaüstü cihazlarda kusursuz çalışsın.
+- Erişilebilirlik kurallarına dikkat edilsin.
+- Menü sabit/sticky olsun.
+- Yumuşak kaydırma efekti olsun.
+- Kart yapıları modern ve okunaklı olsun.
+
+TEKNİK İSTEKLER:
+- Tek parça çalışan bir `index.html` dosyası üret.
+- CSS ve JavaScript aynı dosyanın içinde yer alsın.
+- HTML5, CSS3 ve sade JavaScript kullan.
+- Harici framework zorunlu olmasın.
+- Kodlar temiz, açıklamalı ve geliştirilebilir olsun.
+- Görseller için şimdilik telifsiz placeholder veya gradient kullan.
+- Gerçek görsel eklenecek alanları yorum satırıyla belirt.
+- Site ileride WordPress, PHP veya statik hosting sistemine kolayca taşınabilecek yapıda olsun.
+
+SAYFA BÖLÜMLERİ:
+
+1. ÜST MENÜ
+
+Türkçe menü:
+- Ana Sayfa
+- Çalıştay Hakkında
+- Konular
+- Önemli Tarihler
+- Bildiri Gönderimi
+- Düzenleme Kurulu
+- Yayın Olanakları
+- İletişim
+
+İngilizce menü:
+- Home
+- About
+- Topics
+- Important Dates
+- Submission
+- Organizing Committee
+- Publication Opportunities
+- Contact
+
+2. HERO / AÇILIŞ ALANI
+
+Türkçe hero başlığı:
+Türkiye’de Antroposen Çağında Sulak Alanlarda Ekolojik Riskler Çalıştayı
+
+Türkçe alt başlık:
+Doç. Dr. T. Ahmet Ertek Onuruna
+
+Türkçe açıklama:
+Sulak alan ekosistemlerinde ekolojik riskler, iklim değişikliği, insan baskıları, doğa temelli çözümler ve dijital izleme teknolojileri üzerine çok disiplinli bir bilimsel buluşma.
+
+İngilizce hero başlığı:
+Workshop on Ecological Risks in Wetlands in Türkiye in the Anthropocene
+
+İngilizce alt başlık:
+In Honor of Assoc. Prof. Dr. T. Ahmet Ertek
+
+İngilizce açıklama:
+A multidisciplinary scientific meeting on ecological risks, climate change, human-induced pressures, nature-based solutions and digital monitoring technologies in wetland ecosystems.
+
+Hero butonları:
+Türkçe:
+- Bildiri Gönder
+- Çalıştay Hakkında
+- Konuları İncele
+
+İngilizce:
+- Submit Abstract
+- About the Workshop
+- Explore Topics
+
+3. ÇALIŞTAY HAKKINDA / ABOUT THE WORKSHOP
+
+Türkçe metin:
+Sulak alanlar; biyolojik çeşitlilik, karbon depolama, su döngüsünün düzenlenmesi ve kıyı koruma işlevleri bakımından yeryüzünün en hassas ve en kritik ekosistemleri arasında yer almaktadır. Ancak Antroposen çağında hızlanan insan faaliyetleri, iklim değişikliği ve arazi kullanım dönüşümleri bu ekosistemleri çok boyutlu ekolojik risklerle karşı karşıya bırakmaktadır.
+
+Bu çalıştay, Türkiye’de Antroposen çağında sulak alanların karşı karşıya olduğu ekolojik riskleri, insan kaynaklı baskıları, yönetim sorunlarını ve sürdürülebilir çözüm yaklaşımlarını çok disiplinli bir perspektifle tartışmayı amaçlamaktadır.
+
+İngilizce metin:
+Wetlands are among the most sensitive and critical ecosystems on Earth due to their essential roles in biodiversity conservation, carbon storage, water cycle regulation and coastal protection. However, accelerating human activities, climate change and land-use transformations in the Anthropocene are exposing these ecosystems to multidimensional ecological risks.
+
+This workshop aims to discuss the ecological risks, human-induced pressures, management challenges and sustainable solution approaches affecting wetlands in Türkiye from a multidisciplinary perspective.
+
+4. ONURUNA / IN HONOR OF
+
+Başlık:
+Doç. Dr. T. Ahmet Ertek Onuruna
+
+İngilizce başlık:
+In Honor of Assoc. Prof. Dr. T. Ahmet Ertek
+
+Türkçe metin:
+Bu çalıştay, Doç. Dr. T. Ahmet Ertek’in Antroposen çağında ortam degradasyonu, çevresel değişim ve coğrafi süreçler alanındaki bilimsel katkılarına saygı amacıyla düzenlenmektedir.
+
+İngilizce metin:
+This workshop is organized in honor of Assoc. Prof. Dr. T. Ahmet Ertek, recognizing his scientific contributions to environmental degradation, geographical processes and environmental change in the Anthropocene.
+
+5. TEMATİK ODAKLAR / WORKSHOP TOPICS
+
+Konu başlıklarını kartlar halinde göster. Her kartta kısa ikon veya simge olabilir.
+
+Türkçe konu başlıkları:
+- Sulak alan ekosistemlerinin fiziksel, hidrolojik ve ekolojik dinamikleri
+- Kıyı lagünleri, deltalar, göller ve taşkın düzlüklerinde çevresel değişimler
+- Deniz–kara etkileşimi ve morfolojik süreçler
+- Arazi kullanımı/arazi örtüsü değişimleri ve sulak alan baskıları
+- Kentsel yayılma, turizm, sanayi ve tarımsal faaliyetlerin etkileri
+- Hidromorfolojik müdahaleler ve su rejimi değişimleri
+- Su kalitesi, kirlilik yükleri ve ötrofikasyon süreçleri
+- Sediment taşınımı ve sulak alan sistem dengeleri
+- Biyoçeşitlilik kaybı, habitat parçalanması ve ekosistem bozulmaları
+- İstilacı türler ve ekolojik dayanıklılık sorunları
+- İklim değişikliği, kuraklık ve ekstrem olayların etkileri
+- Deniz seviyesi yükselmesi ve kıyı taşkın riskleri
+- Ekolojik risk analizi ve kırılganlık değerlendirmeleri
+- Sulak alan koruma politikaları ve yönetişim yaklaşımları
+- Ekosistem temelli yönetim ve sürdürülebilir planlama
+- Doğa temelli çözümler ve sulak alan restorasyonu
+- Ramsar alanları ve koruma-kullanma dengesi
+- CBS, uzaktan algılama ve mekânsal analiz uygulamaları
+- Yapay zekâ, büyük veri ve dijital ikiz teknolojileri
+- Karar destek sistemleri ve sürdürülebilir yönetim araçları
+
+İngilizce konu başlıkları:
+- Physical, hydrological and ecological dynamics of wetland ecosystems
+- Environmental changes in coastal lagoons, deltas, lakes and floodplains
+- Sea–land interactions and morphological processes
+- Land-use/land-cover changes and pressures on wetlands
+- Impacts of urban expansion, tourism, industry and agricultural activities
+- Hydromorphological interventions and changes in water regimes
+- Water quality, pollution loads and eutrophication processes
+- Sediment transport and wetland system balances
+- Biodiversity loss, habitat fragmentation and ecosystem degradation
+- Invasive species and ecological resilience challenges
+- Climate change, drought and extreme event impacts
+- Sea-level rise and coastal flood risks
+- Ecological risk analysis and vulnerability assessments
+- Wetland conservation policies and governance approaches
+- Ecosystem-based management and sustainable planning
+- Nature-based solutions and wetland restoration
+- Ramsar sites and conservation-use balance
+- GIS, remote sensing and spatial analysis applications
+- Artificial intelligence, big data and digital twin technologies
+- Decision support systems and sustainable management tools
+
+6. NEDEN KATILMALISINIZ? / WHY PARTICIPATE?
+
+Türkçe maddeler:
+- Türkiye’de sulak alan risklerini çok disiplinli bir bakışla tartışmak
+- Antroposen ve iklim değişikliği bağlamında güncel bilimsel yaklaşımları değerlendirmek
+- CBS, uzaktan algılama, yapay zekâ ve dijital ikiz teknolojilerinin uygulamalarını paylaşmak
+- Doğa temelli çözümler ve restorasyon yaklaşımlarını görünür kılmak
+- Seçili bildiriler için indeksli dergide özel sayı yayını sürecine katkı sunmak
+
+İngilizce maddeler:
+- To discuss wetland risks in Türkiye through a multidisciplinary perspective
+- To evaluate current scientific approaches in the context of the Anthropocene and climate change
+- To share applications of GIS, remote sensing, artificial intelligence and digital twin technologies
+- To highlight nature-based solutions and restoration approaches
+- To contribute to the planned special issue process for selected papers
+
+7. ÖNEMLİ BİLGİLER / KEY INFORMATION
+
+Bilgi kutuları oluştur:
+
+Türkçe:
+Tarih: 22–24 Ekim 2026
+Yer: Çanakkale Onsekiz Mart Üniversitesi, Eğitim Fakültesi, Anafartalar Yerleşkesi
+Bildiri Sayısı: En fazla 20 bildiri kabul edilecektir.
+Değerlendirme: Bildiriler bilimsel yeterlilik, özgünlük ve çalıştay temasıyla uyum açısından hakem değerlendirmesine alınacaktır.
+
+İngilizce:
+Date: 22–24 October 2026
+Venue: Çanakkale Onsekiz Mart University, Faculty of Education, Anafartalar Campus
+Number of Papers: A maximum of 20 papers will be accepted.
+Review Process: Submissions will be peer-reviewed based on scientific quality, originality and relevance to the workshop theme.
+
+8. YAYIN OLANAKLARI / PUBLICATION OPPORTUNITIES
+
+Türkçe:
+Çalıştay kapsamında kabul edilen seçili bildirilerin SCI kapsamındaki indeksli bir dergide özel sayı olarak yayımlanması planlanmaktadır.
+
+İngilizce:
+Selected papers accepted within the scope of the workshop are planned to be published in a special issue of an SCI-indexed journal.
+
+Not:
+Bu ifade kesin yayın garantisi gibi verilmemeli. “Planlanmaktadır / are planned” ifadesi korunmalıdır.
+
+9. DÜZENLEME KURULU BAŞKANI / CHAIR OF THE ORGANIZING COMMITTEE
+
+Profil kartı oluştur:
+
+Prof. Dr. Ahmet Evren ERGİNAL
+Düzenleme Kurulu Başkanı
+Çanakkale Onsekiz Mart Üniversitesi
+Eğitim Fakültesi
+Coğrafya Eğitimi Anabilim Dalı
+
+İngilizce:
+Prof. Dr. Ahmet Evren ERGİNAL
+Chair of the Organizing Committee
+Çanakkale Onsekiz Mart University
+Faculty of Education
+Department of Geography Education
+
+10. BİLDİRİ GÖNDERİMİ / SUBMISSION
+
+Türkçe:
+Çalıştay kapsamında sunulacak bildiriler; bilimsel yeterlilik, özgünlük ve çalıştay temasıyla uyum kriterleri doğrultusunda değerlendirilecektir.
+
+Buton:
+Bildiri Gönderim Sistemi
+
+İngilizce:
+Submissions to the workshop will be evaluated according to scientific quality, originality and relevance to the workshop theme.
+
+Button:
+Submission System
+
+Buton bağlantısı şimdilik # olsun.
+
+11. İLETİŞİM / CONTACT
+
+Türkçe:
+Çanakkale Onsekiz Mart Üniversitesi
+Eğitim Fakültesi, Anafartalar Yerleşkesi, Çanakkale
+E-posta: Yakında duyurulacaktır.
+
+İngilizce:
+Çanakkale Onsekiz Mart University
+Faculty of Education, Anafartalar Campus, Çanakkale, Türkiye
+E-mail: To be announced soon.
+
+12. FOOTER
+
+Türkçe:
+Türkiye’de Antroposen Çağında Sulak Alanlarda Ekolojik Riskler Çalıştayı
+Doç. Dr. T. Ahmet Ertek Onuruna
+© 2026 Çanakkale Onsekiz Mart Üniversitesi
+
+İngilizce:
+Workshop on Ecological Risks in Wetlands in Türkiye in the Anthropocene
+In Honor of Assoc. Prof. Dr. T. Ahmet Ertek
+© 2026 Çanakkale Onsekiz Mart University
+
+EK TASARIM İSTEKLERİ:
+- Ana sayfada tarih ve yer bilgisi görünür olmalı.
+- “Maximum 20 Papers” / “En Fazla 20 Bildiri” bilgisi dikkat çekici bir kutuda verilmeli.
+- Sayfada hafif animasyonlar olabilir.
+- Kartlarda hover efekti olsun.
+- Dil değiştirici sade ama görünür olsun.
+- Mobil menü hamburger yapıda olsun.
+- Site akademik, kurumsal ve uluslararası bir çalıştay havası vermeli.
+- Türkçe ve İngilizce içerikler aynı kalite düzeyinde olmalı.
+- Çıktı tek bir çalışan `index.html` dosyası olsun.

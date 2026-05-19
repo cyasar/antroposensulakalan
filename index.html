@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta-title">Türkiye’de Antroposen Çağında Sulak Alanlarda Ekolojik Riskler Çalıştayı</title>
+    <meta name="description" content="Sulak alan ekosistemlerinde ekolojik riskler, iklim değişikliği, insan baskıları, doğa temelli çözümler ve dijital izleme teknolojileri üzerine çok disiplinli bilimsel çalıştay." data-i18n="meta-desc">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+    <header>
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <svg viewBox="0 0 24 24">
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#38bdf8" />
+                            <stop offset="100%" stop-color="#10b981" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text" data-i18n="logo-title">SULAK ALANLAR</span>
+                    <span class="logo-desc" data-i18n="logo-sub">Ekolojik Riskler Çalıştayı</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <div class="nav-menu-wrapper">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active" data-i18n="menu-home">Ana Sayfa</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="menu-about">Çalıştay Hakkında</a></li>
+                    <li><a href="#topics" class="nav-link" data-i18n="menu-topics">Konular</a></li>
+                    <li><a href="#dates" class="nav-link" data-i18n="menu-dates">Önemli Tarihler</a></li>
+                    <li><a href="#presentations" class="nav-link" data-i18n="menu-presentations">Kabul Edilen Bildiriler</a></li>
+                    <li><a href="#committee" class="nav-link" data-i18n="menu-committee">Düzenleme Kurulu</a></li>
+                    <li><a href="#publication" class="nav-link" data-i18n="menu-publication">Yayın Olanakları</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="menu-contact">İletişim</a></li>
+                </ul>
+
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="tr">TR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+
+                <!-- Hamburger Burger Menu Button -->
+                <div class="nav-burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header Scroll Progress Indicator -->
+        <div class="scroll-progress-container">
+            <div class="scroll-progress-bar"></div>
+        </div>
+    </header>
+
+    <!-- Mobile Fullscreen Overlay Menu -->
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-menu">
+            <li><a href="#home" class="mobile-link" data-i18n="menu-home">Ana Sayfa</a></li>
+            <li><a href="#about" class="mobile-link" data-i18n="menu-about">Çalıştay Hakkında</a></li>
+            <li><a href="#topics" class="mobile-link" data-i18n="menu-topics">Konular</a></li>
+            <li><a href="#dates" class="mobile-link" data-i18n="menu-dates">Önemli Tarihler</a></li>
+            <li><a href="#presentations" class="mobile-link" data-i18n="menu-presentations">Kabul Edilen Bildiriler</a></li>
+            <li><a href="#committee" class="mobile-link" data-i18n="menu-committee">Düzenleme Kurulu</a></li>
+            <li><a href="#publication" class="mobile-link" data-i18n="menu-publication">Yayın Olanakları</a></li>
+            <li><a href="#contact" class="mobile-link" data-i18n="menu-contact">İletişim</a></li>
+        </ul>
+    </div>
+
+    <!-- ==========================================================================
+       HERO / AÇILIŞ ALANI
+       ========================================================================== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                
+                <!-- Hero Content Details -->
+                <div class="hero-content">
+                    <div class="hero-badge-wrap">
+                        <span class="hero-badge">
+                            <i class="fas fa-microscope"></i>
+                            <span data-i18n="hero-badge">Akademik Bilimsel Çalıştay 2026</span>
+                        </span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span data-i18n="hero-title">Türkiye’de Antroposen Çağında</span>
+                        <span class="gradient-text" data-i18n="hero-title-span">Sulak Alanlarda Ekolojik Riskler</span>
+                    </h1>
+                    <div class="hero-honoree" data-i18n="hero-honoree">Doç. Dr. Topçu Ahmet ERTEK Onuruna</div>
+                    <p class="hero-desc" data-i18n="hero-desc">
+                        Sulak alan ekosistemlerinde ekolojik riskler, iklim değişikliği, insan baskıları, doğa temelli çözümler ve dijital izleme teknolojileri üzerine çok disiplinli bir bilimsel buluşma.
+                    </p>
+                    
+                    <!-- CTAs Buttons -->
+                    <div class="hero-actions">
+                        <a href="#presentations" class="btn btn-primary">
+                            <i class="fas fa-file-invoice"></i>
+                            <span data-i18n="btn-explore-pres">Bildirileri İncele</span>
+                        </a>
+                        <a href="#about" class="btn btn-secondary" data-i18n="btn-about">Çalıştay Hakkında</a>
+                        <a href="#topics" class="btn btn-outline" data-i18n="btn-topics">Konuları İncele</a>
+                    </div>
+                    
+                    <!-- Hero Meta Tags Row -->
+                    <div class="hero-meta-row">
+                        <div class="hero-meta-item">
+                            <div class="hero-meta-icon"><i class="far fa-calendar-alt"></i></div>
+                            <div class="hero-meta-text">
+                                <h5 data-i18n="meta-date-label">Çalıştay Tarihi</h5>
+                                <p data-i18n="meta-date-val">22–24 Ekim 2026</p>
+                            </div>
+                        </div>
+                        <div class="hero-meta-item">
+                            <div class="hero-meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="hero-meta-text">
+                                <h5 data-i18n="meta-venue-label">Etkinlik Yeri</h5>
+                                <p data-i18n="meta-venue-val">ÇOMÜ, Çanakkale</p>
+                            </div>
+                        </div>
+                        <div class="hero-meta-item">
+                            <div class="hero-meta-icon"><i class="fas fa-clipboard-check"></i></div>
+                            <div class="hero-meta-text">
+                                <h5 data-i18n="meta-capacity-label">Katılım Sınırı</h5>
+                                <p data-i18n="meta-capacity-val">En Fazla 20 Bildiri</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Countdown Widget Column -->
+                <div class="hero-countdown">
+                    <div class="countdown-widget">
+                        <h4 class="countdown-title" data-i18n="countdown-title">Çalıştaya Kalan Süre</h4>
+                        <div class="countdown-timer">
+                            <div class="countdown-item">
+                                <span id="cd-days" class="countdown-val">00</span>
+                                <span class="countdown-label" data-i18n="countdown-days">Gün</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="cd-hours" class="countdown-val">00</span>
+                                <span class="countdown-label" data-i18n="countdown-hours">Saat</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="cd-mins" class="countdown-val">00</span>
+                                <span class="countdown-label" data-i18n="countdown-minutes">Mins</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="cd-secs" class="countdown-val">00</span>
+                                <span class="countdown-label" data-i18n="countdown-seconds">Secs</span>
+                            </div>
+                        </div>
+                        <p class="countdown-note" data-i18n="countdown-note">Kabul edilen bildiri sınırı: <strong>En fazla 20</strong></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ABOUT THE WORKSHOP
+       ========================================================================== -->
+    <section id="about" class="about">
+        <div class="ambient-glow" style="top: 10%; left: -5%;"></div>
+        <div class="container">
+            <div class="about-grid">
+                
+                <!-- Left: Scientific Interactive Metrics Box -->
+                <div class="about-image-card reveal-element">
+                    <div class="about-metrics">
+                        <div class="metric-card">
+                            <i class="fas fa-layer-group metric-icon"></i>
+                            <div class="metric-value" data-i18n="metric-topics-val">20</div>
+                            <div class="metric-label" data-i18n="metric-topics-lbl">Tematik Odak Alanı</div>
+                        </div>
+                        <div class="metric-card">
+                            <i class="fas fa-file-alt metric-icon"></i>
+                            <div class="metric-value" data-i18n="metric-papers-val">Max 20</div>
+                            <div class="metric-label" data-i18n="metric-papers-lbl">Kabul Edilecek Bildiri</div>
+                        </div>
+                        <div class="metric-card">
+                            <i class="fas fa-university metric-icon"></i>
+                            <div class="metric-value" data-i18n="metric-host-val">ÇOMÜ</div>
+                            <div class="metric-label" data-i18n="metric-host-lbl">Ev Sahibi Kurum</div>
+                        </div>
+                        <div class="metric-card">
+                            <i class="fas fa-globe metric-icon"></i>
+                            <div class="metric-value" data-i18n="metric-pub-val">SCI</div>
+                            <div class="metric-label" data-i18n="metric-pub-lbl">Özel Sayı Planı</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Information texts and details -->
+                <div class="about-content reveal-element">
+                    <span class="section-subtitle" data-i18n="about-subtitle">Bilimsel Perspektif</span>
+                    <h2 class="section-title" data-i18n="about-title">Çalıştay Hakkında</h2>
+                    <p class="about-text-p" data-i18n="about-text-1">
+                        Sulak alanlar; biyolojik çeşitlilik, karbon depolama, su döngüsünün düzenlenmesi ve kıyı koruma işlevleri bakımından yeryüzünün en hassas ve en kritik ekosistemleri arasında yer almaktadır. Ancak Antroposen çağında hızlanan insan faaliyetleri, iklim değişikliği ve arazi kullanım dönüşümleri bu ekosistemleri çok boyutlu ekolojik risklerle karşı karşıya bırakmaktadır.
+                    </p>
+                    <p class="about-text-p" data-i18n="about-text-2">
+                        Bu çalıştay, Türkiye’de Antroposen çağında sulak alanların karşı karşıya olduğu ekolojik riskleri, insan kaynaklı baskıları, yönetim sorunlarını ve sürdürülebilir çözüm yaklaşımlarını çok disiplinli bir perspektifle tartışmayı amaçlamaktadır.
+                    </p>
+                    
+                    <!-- Core Bullet Features list -->
+                    <ul class="about-bullets">
+                        <li class="about-bullet-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about-bullet-1">Çok disiplinli katılım</span>
+                        </li>
+                        <li class="about-bullet-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about-bullet-2">Doğa temelli çözümler</span>
+                        </li>
+                        <li class="about-bullet-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about-bullet-3">Dijital CBS entegrasyonu</span>
+                        </li>
+                        <li class="about-bullet-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about-bullet-4">Stratejik karar destek</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       HONORARY DEDICATION
+       ========================================================================== -->
+    <section id="honoree" class="honoree-section">
+        <div class="ambient-glow" style="bottom: 10%; right: -5%;"></div>
+        <div class="container">
+            <div class="honoree-card reveal-element">
+                <div class="honoree-grid">
+                    
+                    <!-- Portrait Column referencing actual image -->
+                    <div class="honoree-img-wrapper">
+                        <img src="./T.Ahmet_Ertek.jpg" alt="Doç. Dr. Topçu Ahmet ERTEK" class="honoree-img">
+                        <div class="honoree-badge"><i class="fas fa-medal"></i></div>
+                    </div>
+
+                    <!-- Biography Column -->
+                    <div class="honoree-info">
+                        <span class="section-subtitle" data-i18n="honoree-subtitle">Saygı ve İthaf</span>
+                        <h3 data-i18n="honoree-title">Doç. Dr. Topçu Ahmet ERTEK Onuruna</h3>
+                        <div class="honoree-title" data-i18n="honoree-role">Fiziki Coğrafya & Jeomorfoloji Uzmanı</div>
+                        <p class="honoree-bio" data-i18n="honoree-bio">
+                            Bu çalıştay, Doç. Dr. Topçu Ahmet ERTEK’in Antroposen çağında ortam degradasyonu, çevresel değişim ve coğrafi süreçler alanındaki bilimsel katkılarına saygı amacıyla düzenlenmektedir. Dr. Ertek, Türkiye fiziki coğrafyası, jeomorfolojisi ve kıyı ekosistemleri üzerine yaptığı uzun soluklu akademik çalışmalarıyla nesiller boyu yerbilimcilere rehberlik etmiştir.
+                        </p>
+                        <div class="honoree-links">
+                            <a href="https://avesis.istanbul.edu.tr/taertek" target="_blank" class="btn btn-outline" style="padding: 8px 20px;">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span data-i18n="honoree-profile-btn">Akademik Profil</span>
+                            </a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       TOPICS / THEMATIC FOCUSES
+       ========================================================================== -->
+    <section id="topics" class="topics">
+        <div class="container">
+            
+            <div class="section-header reveal-element">
+                <span class="section-subtitle" data-i18n="topics-subtitle">Bilimsel Kapsam</span>
+                <h2 class="section-title" data-i18n="topics-title">Tematik Odaklar & Konu Başlıkları</h2>
+                <p class="section-description" data-i18n="topics-desc">Çalıştay kapsamında tartışılacak ve taranacak 20 temel akademik konu başlığı.</p>
+            </div>
+
+            <!-- Custom Category Filter Bar -->
+            <div class="filter-container reveal-element">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter-all">Tüm Konular</button>
+                <button class="filter-btn" data-filter="fiziksel" data-i18n="filter-physical">Fiziksel & Hidroloji</button>
+                <button class="filter-btn" data-filter="ekolojik" data-i18n="filter-ecology">Ekoloji & İklim</button>
+                <button class="filter-btn" data-filter="yonetim" data-i18n="filter-policy">Yönetim & Politika</button>
+                <button class="filter-btn" data-filter="teknoloji" data-i18n="filter-technology">CBS & Yapay Zeka</button>
+            </div>
+
+            <!-- 20 Core Topics Cards -->
+            <div class="topics-grid">
+                
+                <!-- Topic 1 -->
+                <div class="topic-card reveal-element" data-category="fiziksel">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-tint"></i></div>
+                        <span class="topic-num">01</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-1">Sulak alan ekosistemlerinin fiziksel, hidrolojik ve ekolojik dinamikleri</h4>
+                    <span class="topic-tag" data-i18n="filter-physical">Fiziksel & Hidroloji</span>
+                </div>
+
+                <!-- Topic 2 -->
+                <div class="topic-card reveal-element" data-category="fiziksel">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-water"></i></div>
+                        <span class="topic-num">02</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-2">Kıyı lagünleri, deltalar, göller ve taşkın düzlüklerinde çevresel değişimler</h4>
+                    <span class="topic-tag" data-i18n="filter-physical">Fiziksel & Hidroloji</span>
+                </div>
+
+                <!-- Topic 3 -->
+                <div class="topic-card reveal-element" data-category="fiziksel">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-shuttle-space" style="transform: rotate(90deg);"></i></div>
+                        <span class="topic-num">03</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-3">Deniz–kara etkileşimi ve morfolojik süreçler</h4>
+                    <span class="topic-tag" data-i18n="filter-physical">Fiziksel & Hidroloji</span>
+                </div>
+
+                <!-- Topic 4 -->
+                <div class="topic-card reveal-element" data-category="ekolojik">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-mountain"></i></div>
+                        <span class="topic-num">04</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-4">Arazi kullanımı/arazi örtüsü değişimleri ve sulak alan baskıları</h4>
+                    <span class="topic-tag" data-i18n="filter-ecology">Ekoloji & İklim</span>
+                </div>
+
+                <!-- Topic 5 -->
+                <div class="topic-card reveal-element" data-category="ekolojik">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-city"></i></div>
+                        <span class="topic-num">05</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-5">Kentsel yayılma, turizm, sanayi ve tarımsal faaliyetlerin etkileri</h4>
+                    <span class="topic-tag" data-i18n="filter-ecology">Ekoloji & İklim</span>
+                </div>
+
+                <!-- Topic 6 -->
+                <div class="topic-card reveal-element" data-category="fiziksel">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-sliders-h"></i></div>
+                        <span class="topic-num">06</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-6">Hidromorfolojik müdahaleler ve su rejimi değişimleri</h4>
+                    <span class="topic-tag" data-i18n="filter-physical">Fiziksel & Hidroloji</span>
+                </div>
+
+                <!-- Topic 7 -->
+                <div class="topic-card reveal-element" data-category="ekolojik">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-flask"></i></div>
+                        <span class="topic-num">07</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-7">Su kalitesi, kirlilik yükleri ve ötrofikasyon süreçleri</h4>
+                    <span class="topic-tag" data-i18n="filter-ecology">Ekoloji & İklim</span>
+                </div>
+
+                <!-- Topic 8 -->
+                <div class="topic-card reveal-element" data-category="fiziksel">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-align-center"></i></div>
+                        <span class="topic-num">08</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-8">Sediment taşınımı ve sulak alan sistem dengeleri</h4>
+                    <span class="topic-tag" data-i18n="filter-physical">Fiziksel & Hidroloji</span>
+                </div>
+
+                <!-- Topic 9 -->
+                <div class="topic-card reveal-element" data-category="ekolojik">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-seedling"></i></div>
+                        <span class="topic-num">09</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-9">Biyoçeşitlilik kaybı, habitat parçalanması ve ekosistem bozulmaları</h4>
+                    <span class="topic-tag" data-i18n="filter-ecology">Ekoloji & İklim</span>
+                </div>
+
+                <!-- Topic 10 -->
+                <div class="topic-card reveal-element" data-category="ekolojik">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-bug"></i></div>
+                        <span class="topic-num">10</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-10">İstilacı türler ve ekolojik dayanıklılık sorunları</h4>
+                    <span class="topic-tag" data-i18n="filter-ecology">Ekoloji & İklim</span>
+                </div>
+
+                <!-- Topic 11 -->
+                <div class="topic-card reveal-element" data-category="ekolojik">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-cloud-sun-rain"></i></div>
+                        <span class="topic-num">11</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-11">İklim değişikliği, kuraklık ve ekstrem olayların etkileri</h4>
+                    <span class="topic-tag" data-i18n="filter-ecology">Ekoloji & İklim</span>
+                </div>
+
+                <!-- Topic 12 -->
+                <div class="topic-card reveal-element" data-category="ekolojik">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-cloud-showers-water"></i></div>
+                        <span class="topic-num">12</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-12">Deniz seviyesi yükselmesi ve kıyı taşkın riskleri</h4>
+                    <span class="topic-tag" data-i18n="filter-ecology">Ekoloji & İklim</span>
+                </div>
+
+                <!-- Topic 13 -->
+                <div class="topic-card reveal-element" data-category="ekolojik">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-skull-crossbones"></i></div>
+                        <span class="topic-num">13</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-13">Ekolojik risk analizi ve kırılganlık değerlendirmeleri</h4>
+                    <span class="topic-tag" data-i18n="filter-ecology">Ekoloji & İklim</span>
+                </div>
+
+                <!-- Topic 14 -->
+                <div class="topic-card reveal-element" data-category="yonetim">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-gavel"></i></div>
+                        <span class="topic-num">14</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-14">Sulak alan koruma politikaları ve yönetişim yaklaşımları</h4>
+                    <span class="topic-tag" data-i18n="filter-policy">Yönetim & Politika</span>
+                </div>
+
+                <!-- Topic 15 -->
+                <div class="topic-card reveal-element" data-category="yonetim">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-chart-line"></i></div>
+                        <span class="topic-num">15</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-15">Ekosistem temelli yönetim ve sürdürülebilir planlama</h4>
+                    <span class="topic-tag" data-i18n="filter-policy">Yönetim & Politika</span>
+                </div>
+
+                <!-- Topic 16 -->
+                <div class="topic-card reveal-element" data-category="ekolojik">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-leaf"></i></div>
+                        <span class="topic-num">16</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-16">Doğa temelli çözümler ve sulak alan restorasyonu</h4>
+                    <span class="topic-tag" data-i18n="filter-ecology">Ekoloji & İklim</span>
+                </div>
+
+                <!-- Topic 17 -->
+                <div class="topic-card reveal-element" data-category="yonetim">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-clipboard-list"></i></div>
+                        <span class="topic-num">17</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-17">Ramsar alanları ve koruma-kullanma dengesi</h4>
+                    <span class="topic-tag" data-i18n="filter-policy">Yönetim & Politika</span>
+                </div>
+
+                <!-- Topic 18 -->
+                <div class="topic-card reveal-element" data-category="teknoloji">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-map-marked-alt"></i></div>
+                        <span class="topic-num">18</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-18">CBS, uzaktan algılama ve mekânsal analiz uygulamaları</h4>
+                    <span class="topic-tag" data-i18n="filter-technology">CBS & Yapay Zeka</span>
+                </div>
+
+                <!-- Topic 19 -->
+                <div class="topic-card reveal-element" data-category="teknoloji">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-brain"></i></div>
+                        <span class="topic-num">19</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-19">Yapay zekâ, büyük veri ve dijital ikiz teknolojileri</h4>
+                    <span class="topic-tag" data-i18n="filter-technology">CBS & Yapay Zeka</span>
+                </div>
+
+                <!-- Topic 20 -->
+                <div class="topic-card reveal-element" data-category="teknoloji">
+                    <div class="topic-header">
+                        <div class="topic-icon-box"><i class="fas fa-cubes"></i></div>
+                        <span class="topic-num">20</span>
+                    </div>
+                    <h4 class="topic-title" data-i18n="topic-20">Karar destek sistemleri ve sürdürülebilir yönetim araçları</h4>
+                    <span class="topic-tag" data-i18n="filter-technology">CBS & Yapay Zeka</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       WHY PARTICIPATE
+       ========================================================================== -->
+    <section id="why-attend" class="why-attend">
+        <div class="container">
+            <div class="why-grid">
+                
+                <!-- Left: 5 Key Reasons bullet checklist -->
+                <div class="why-content reveal-element">
+                    <span class="section-subtitle" data-i18n="why-subtitle">Katılım Gerekçeleri</span>
+                    <h2 class="section-title" data-i18n="why-title">Çalıştaya Neden Katılmalısınız?</h2>
+                    <p class="section-description" style="margin: 0 0 40px;" data-i18n="why-desc">
+                        Bu çalıştay, akademik üretkenliği en üst düzeye çıkarmak ve sulak alan ekosistemlerimizin geleceğini şekillendirmek için tasarlanmış seçkin bir platformdur.
+                    </p>
+                    
+                    <div class="why-list">
+                        <!-- Reason 1 -->
+                        <div class="why-item">
+                            <div class="why-item-icon"><i class="fas fa-users-cog"></i></div>
+                            <div class="why-item-text">
+                                <h4 data-i18n="why-point-1-title">Çok Disiplinli Perspektif</h4>
+                                <p data-i18n="why-point-1-desc">Türkiye'de sulak alan risklerini çok disiplinli bir bakışla tartışmak ve farklı alanlardan yerbilimcilerle iş birliği kurmak.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Reason 2 -->
+                        <div class="why-item">
+                            <div class="why-item-icon"><i class="fas fa-temperature-high"></i></div>
+                            <div class="why-item-text">
+                                <h4 data-i18n="why-point-2-title">Antroposen & İklim Değişikliği</h4>
+                                <p data-i18n="why-point-2-desc">Antroposen ve iklim değişikliği bağlamında güncel bilimsel yaklaşımları, teori ve saha tecrübelerini değerlendirmek.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Reason 3 -->
+                        <div class="why-item">
+                            <div class="why-item-icon"><i class="fas fa-network-wired"></i></div>
+                            <div class="why-item-text">
+                                <h4 data-i18n="why-point-3-title">İleri Dijital Entegrasyon</h4>
+                                <p data-i18n="why-point-3-desc">CBS, uzaktan algılama, yapay zekâ ve dijital ikiz teknolojilerinin pratik saha uygulamalarını paylaşmak.</p>
+                            </div>
+                        </div>
+
+                        <!-- Reason 4 -->
+                        <div class="why-item">
+                            <div class="why-item-icon"><i class="fas fa-spa"></i></div>
+                            <div class="why-item-text">
+                                <h4 data-i18n="why-point-4-title">Doğa Temelli Yaklaşımlar</h4>
+                                <p data-i18n="why-point-4-desc">Sürdürülebilir restorasyon yaklaşımları ve doğa temelli çözümleri bilim dünyası ve politika yapıcılara görünür kılmak.</p>
+                            </div>
+                        </div>
+
+                        <!-- Reason 5 -->
+                        <div class="why-item">
+                            <div class="why-item-icon"><i class="fas fa-journal-whills"></i></div>
+                            <div class="why-item-text">
+                                <h4 data-i18n="why-point-5-title">SCI İndeks Özel Sayı Olanağı</h4>
+                                <p data-i18n="why-point-5-desc">Seçili bildiriler için indeksli dergide (SCI/SCI-E kapsamında) özel sayı yayını sürecine katkı sunmak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Scientific Aesthetic Degradation Trend CSS Graph -->
+                <div class="why-visual reveal-element">
+                    <div class="why-sci-card">
+                        <div class="why-sci-header">
+                            <span class="why-sci-badge" data-i18n="why-sci-badge">Ekolojik Gösterge</span>
+                            <h4 class="why-sci-title" data-i18n="why-sci-title">Türkiye Sulak Alan Bozulma Trendi</h4>
+                        </div>
+                        
+                        <!-- Dynamic CSS graph bars -->
+                        <div class="why-sci-graph">
+                            <div class="why-graph-bar" data-index="1" data-percentage="45"></div>
+                            <div class="why-graph-bar" data-index="2" data-percentage="75"></div>
+                            <div class="why-graph-bar" data-index="3" data-percentage="60"></div>
+                            <div class="why-graph-bar" data-index="4" data-percentage="95"></div>
+                        </div>
+                        
+                        <div class="why-sci-footer">
+                            <span data-i18n="why-sci-label-1">Lagünler</span>
+                            <span data-i18n="why-sci-label-2">Deltalar</span>
+                            <span data-i18n="why-sci-label-3">İç Göller</span>
+                            <strong data-i18n="why-sci-label-4" style="color: var(--accent-green);">Koruma Alanları</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       IMPORTANT INFORMATION & TIMELINE
+       ========================================================================== -->
+    <section id="dates" class="info-dates">
+        <div class="container">
+            
+            <div class="section-header reveal-element">
+                <span class="section-subtitle" data-i18n="info-subtitle">Katılım Koşulları</span>
+                <h2 class="section-title" data-i18n="info-title">Önemli Bilgiler & Süreçler</h2>
+            </div>
+
+            <!-- Key Info Boxes Grid -->
+            <div class="info-grid">
+                <!-- Date -->
+                <div class="info-box reveal-element">
+                    <div class="info-box-icon"><i class="far fa-calendar-check"></i></div>
+                    <h3 data-i18n="info-box-1-title">Etkinlik Tarihi</h3>
+                    <p data-i18n="info-box-1-desc">Çalıştay oturumları, arazi gezileri ve sosyal programlar.</p>
+                    <span class="info-box-highlight" data-i18n="info-box-1-val">22–24 Ekim 2026</span>
+                </div>
+                
+                <!-- Venue -->
+                <div class="info-box reveal-element">
+                    <div class="info-box-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3 data-i18n="info-box-2-title">Etkinlik Yeri</h3>
+                    <p data-i18n="info-box-2-desc">Çanakkale Onsekiz Mart Üniversitesi, Anafartalar Yerleşkesi.</p>
+                    <span class="info-box-highlight" data-i18n="info-box-2-val">Eğitim Fakültesi</span>
+                </div>
+
+                <!-- Capacity Limit (En Fazla 20 Bildiri) -->
+                <div class="info-box reveal-element" style="border: 1px solid var(--accent-cyan);">
+                    <div class="info-box-icon" style="background: rgba(6,182,212,0.1);"><i class="fas fa-users"></i></div>
+                    <h3 data-i18n="info-box-3-title">Kabul Limiti</h3>
+                    <p data-i18n="info-box-3-desc">Etkinlik kalitesi ve yoğun bilimsel tartışma ortamını korumak için.</p>
+                    <span class="info-box-highlight" style="color: var(--accent-green);" data-i18n="info-box-3-val">Maksimum 20 Bildiri</span>
+                </div>
+
+                <!-- Review Process -->
+                <div class="info-box reveal-element">
+                    <div class="info-box-icon"><i class="fas fa-user-shield"></i></div>
+                    <h3 data-i18n="info-box-4-title">Değerlendirme Tipi</h3>
+                    <p data-i18n="info-box-4-desc">Bildiriler özgünlük, bilimsel yeterlilik ve tema uyumu açısından değerlendirilir.</p>
+                    <span class="info-box-highlight" data-i18n="info-box-4-val">Çift-Kör Hakemli</span>
+                </div>
+            </div>
+
+            <!-- Maximum 20 Papers Highlight Featured Box -->
+            <div style="text-align: center;" class="reveal-element">
+                <div class="featured-badge-box">
+                    <div class="featured-badge-icon"><i class="fas fa-exclamation-circle"></i></div>
+                    <div class="featured-badge-text">
+                        <h4 data-i18n="special-box-title">Kabul Edilen Bildirilerin Duyurulması Hakkında</h4>
+                        <p data-i18n="special-box-desc">Özet bildiri gönderim aşaması tamamlanmıştır. Çalıştay kapsamında sunulmak üzere hakem heyeti tarafından kabul edilen çalışmalar aşağıda listelenmiştir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milestone Vertical Timeline -->
+            <h3 class="timeline-section-title reveal-element" data-i18n="timeline-main-title">Çalıştay Süreç Takvimi</h3>
+            <div class="timeline reveal-element">
+                
+                <!-- Milestone 1 -->
+                <div class="timeline-item left reveal-element">
+                    <span class="timeline-badge" data-i18n="timeline-1-date">05 Eylül 2026</span>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title" data-i18n="timeline-1-title">Kabul Edilen Bildirilerin İlanı</h4>
+                        <p class="timeline-desc" data-i18n="timeline-1-desc">Bilim kurulu değerlendirmesi sonucu kabul edilen bildiriler e-posta ile duyurulacaktır.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 2 -->
+                <div class="timeline-item right reveal-element">
+                    <span class="timeline-badge" data-i18n="timeline-2-date">30 Eylül 2026</span>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title" data-i18n="timeline-2-title">Tam Metin Gönderim Son Tarihi</h4>
+                        <p class="timeline-desc" data-i18n="timeline-2-desc">Çalıştay kitabında ve özel sayı değerlendirmesinde yer alacak tam metinlerin gönderilmesi.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3 -->
+                <div class="timeline-item left reveal-element">
+                    <span class="timeline-badge" data-i18n="timeline-3-date">10 Ekim 2026</span>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title" data-i18n="timeline-3-title">Çalıştay Programının İlanı</h4>
+                        <p class="timeline-desc" data-i18n="timeline-3-desc">Oturumların, davetli konuşmacıların ve arazi gezisi rotasının detaylı ilanı.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 4 -->
+                <div class="timeline-item right reveal-element">
+                    <span class="timeline-badge" data-i18n="timeline-4-date">22–24 Ekim 2026</span>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title" data-i18n="timeline-4-title">Çalıştay Başlangıcı</h4>
+                        <p class="timeline-desc" data-i18n="timeline-4-desc">Açılış töreni, bilimsel sunumlar ve sulak alan izleme panelleri.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       PUBLICATION OPPORTUNITIES
+       ========================================================================== -->
+    <section id="publication" class="publications">
+        <div class="container">
+            <div class="pub-card reveal-element">
+                
+                <!-- Left: Details and metrics list -->
+                <div class="pub-content">
+                    <span class="pub-tag">
+                        <i class="fas fa-star"></i>
+                        <span data-i18n="pub-tag">Bilimsel Saygınlık</span>
+                    </span>
+                    <h3 data-i18n="pub-title">Yayın Olanakları & SCI Özel Sayısı</h3>
+                    <p class="pub-text" data-i18n="pub-text">
+                        Çalıştay kapsamında kabul edilen ve başarıyla sunulan seçili bildirilerin SCI (Science Citation Index) kapsamında taranan saygın bir uluslararası akademik dergide <strong>özel sayı (Special Issue) olarak yayımlanması planlanmaktadır</strong>.
+                    </p>
+                    
+                    <div class="pub-badges">
+                        <div class="pub-badge-item">
+                            <i class="fas fa-check"></i>
+                            <span data-i18n="pub-badge-1">SCI / Web of Science</span>
+                        </div>
+                        <div class="pub-badge-item">
+                            <i class="fas fa-check"></i>
+                            <span data-i18n="pub-badge-2">Hakem Değerlendirmeli</span>
+                        </div>
+                        <div class="pub-badge-item">
+                            <i class="fas fa-check"></i>
+                            <span data-i18n="pub-badge-3">Yüksek Etki Faktörü</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: 3D CSS Volume Cover Mockup of the special issue -->
+                <div class="pub-journal-wrap">
+                    <div class="pub-journal-mockup">
+                        <div class="journal-header">
+                            <span class="journal-label" data-i18n="journal-lbl">ÖZEL SAYI PLANI</span>
+                            <div class="journal-volume" data-i18n="journal-vol">Cilt 48, Sayı 4 - 2026</div>
+                        </div>
+                        <div class="journal-body">
+                            <h4 class="journal-title" data-i18n="journal-title">Anthropocene Wetland Risks & Solutions</h4>
+                            <p class="journal-subtitle" data-i18n="journal-sub">Seçilmiş makaleler derlemesi hakem sürecine tabidir.</p>
+                        </div>
+                        <div class="journal-footer">
+                            <span class="journal-index-tag">SCI INDEXED</span>
+                            <span class="journal-issn">ISSN: 1042-82X</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ORGANIZING COMMITTEE
+       ========================================================================== -->
+    <section id="committee" class="committee">
+        <div class="container">
+            
+            <div class="section-header reveal-element">
+                <span class="section-subtitle" data-i18n="menu-committee">Düzenleme Kurulu</span>
+                <h2 class="section-title" data-i18n="committee-title">Düzenleme Kurulu Başkanı</h2>
+            </div>
+
+            <!-- Committee card -->
+            <div class="committee-wrap">
+                <div class="committee-card reveal-element">
+                    <div class="committee-img-wrap">
+                        <img src="./prof_placeholder.png" alt="Prof. Dr. Ahmet Evren Erginal" class="committee-img">
+                    </div>
+                    <h3 class="committee-name">Prof. Dr. Ahmet Evren ERGİNAL</h3>
+                    <span class="committee-role" data-i18n="menu-committee">Düzenleme Kurulu Başkanı</span>
+                    
+                    <ul class="committee-details">
+                        <li><strong><span data-i18n="committee-uni">Çanakkale Onsekiz Mart Üniversitesi</span></strong></li>
+                        <li data-i18n="committee-fac">Eğitim Fakültesi</li>
+                        <li data-i18n="committee-dept">Coğrafya Eğitimi Anabilim Dalı</li>
+                    </ul>
+                    
+                    <div class="committee-contacts">
+                        <a href="mailto:aerginal@comu.edu.tr" class="social-link"><i class="far fa-envelope"></i></a>
+                        <a href="https://avesis.comu.edu.tr/aerginal" target="_blank" class="social-link"><i class="fas fa-university"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ACCEPTED PAPERS & SUBMISSIONS SHOWCASE
+       ========================================================================== -->
+    <section id="presentations" class="submission">
+        <div class="container">
+            
+            <div class="section-header reveal-element">
+                <span class="section-subtitle" data-i18n="pres-subtitle">Kabul Edilen Çalışmalar</span>
+                <h2 class="section-title" data-i18n="pres-title">Kabul Edilen Bildiriler Listesi</h2>
+                <p class="section-description" data-i18n="pres-desc">Çalıştay bilim kurulu tarafından onaylanan ve sunulacak olan seçkin bildiriler.</p>
+            </div>
+
+            <!-- Intro text and Call to Action linking to the PDF -->
+            <div class="presentations-intro-grid reveal-element">
+                <div class="presentations-intro-text">
+                    <p data-i18n="pres-desc">
+                        Çalıştay bilim kurulu tarafından onaylanan ve 22–24 Ekim tarihleri arasında sunulacak olan seçkin bilimsel bildiriler. Çağrı metnine ulaşmak için dökümanı indirebilirsiniz.
+                    </p>
+                </div>
+                <!-- Call to action linking to `./Çağrı metni.pdf` -->
+                <div class="presentations-intro-action">
+                    <a href="./Çağrı metni.pdf" target="_blank" class="btn btn-primary">
+                        <i class="far fa-file-pdf"></i>
+                        <span data-i18n="btn-download-pdf">Çalıştay Çağrı Metnini İndir (PDF)</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Live Search and dynamic cards grid -->
+            <div class="presentations-search-bar reveal-element">
+                <i class="fas fa-search"></i>
+                <input type="text" id="pres-search-input" placeholder="Bildiri adı veya yazar adı ile ara..." data-i18n="pres-search-placeholder">
+            </div>
+
+            <!-- Dynamic presentations list container -->
+            <div id="presentations-list" class="presentations-grid reveal-element">
+                <!-- JS will populate cards dynamically here -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT & MAPS
+       ========================================================================== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            
+            <div class="section-header reveal-element">
+                <span class="section-subtitle" data-i18n="menu-contact">İletişim</span>
+                <h2 class="section-title" data-i18n="contact-title">Kurumsal İletişim Bilgileri</h2>
+            </div>
+
+            <div class="contact-grid">
+                
+                <!-- Left: Contact Details and Secretary Message Form -->
+                <div class="contact-info-wrap reveal-element">
+                    <div class="contact-methods">
+                        <!-- Address -->
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class="contact-method-details">
+                                <h4 data-i18n="contact-address-title">Çalıştay Merkezi Adresi</h4>
+                                <p data-i18n="meta-venue-val">ÇOMÜ Eğitim Fakültesi, Anafartalar Yerleşkesi, Çanakkale</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-method-card">
+                            <div class="contact-method-icon"><i class="far fa-envelope-open"></i></div>
+                            <div class="contact-method-details">
+                                <h4 data-i18n="contact-email-title">E-posta Adresi</h4>
+                                <p data-i18n="contact-email-val">Yakında duyurulacaktır.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- simulated interactive email form -->
+                    <div class="sub-form-card">
+                        <h4 data-i18n="contact-form-title">Hızlı İletişim Formu</h4>
+                        <form id="quick-contact-form">
+                            <div class="form-group">
+                                <label for="form-name" data-i18n="form-name-lbl">Adınız ve Soyadınız</label>
+                                <input type="text" id="form-name" class="form-control" placeholder="Adınız ve Soyadınız" data-i18n="form-name-lbl">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" data-i18n="form-email-lbl">E-posta Adresiniz</label>
+                                <input type="email" id="form-email" class="form-control" placeholder="E-posta Adresiniz" data-i18n="form-email-lbl">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject" data-i18n="form-subject-lbl">Konu</label>
+                                <input type="text" id="form-subject" class="form-control" placeholder="Konu" data-i18n="form-subject-lbl">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message" data-i18n="form-message-lbl">Mesajınız</label>
+                                <textarea id="form-message" class="form-control" placeholder="Mesajınız" data-i18n="form-message-lbl"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="far fa-paper-plane"></i>
+                                <span data-i18n="btn-send-message">Mesajı Gönder</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right: High-End Custom Styled Map pointing to Anafartalar Campus -->
+                <div class="map-card reveal-element">
+                    <!-- High-contrast styled OpenStreetMap iframe focusing precisely on COMU Anafartalar Campus, Canakkale -->
+                    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m4!2m3!1m2!1d26.4068307!2d40.1508216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a134b2207b57%3A0xc48de27e7d6928e4!2zQ8KnYW5ha2thbGUgT25zZWtpeiBNYXJ0IMOcbml2ZXJzaXRlc2kgQW5hZmFydGFsYXIgWWVybGXFn2VzaQ!5e0!3m2!1str!2str!4v1716139045763!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-about">
+                    <h4 data-i18n="footer-about-title">SULAK ALANLAR 2026</h4>
+                    <p data-i18n="footer-about-desc">Türkiye'de Antroposen Çağında Sulak Alanlarda Ekolojik Riskler Çalıştayı. Doç. Dr. Topçu Ahmet ERTEK Onuruna.</p>
+                    <div class="honoree-links">
+                        <a href="#" class="social-link" style="width: 36px; height: 36px; font-size: 0.95rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" style="width: 36px; height: 36px; font-size: 0.95rem;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" style="width: 36px; height: 36px; font-size: 0.95rem;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 data-i18n="footer-links-title">Hızlı Bağlantılar</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#home"><i class="fas fa-chevron-right"></i><span data-i18n="menu-home">Ana Sayfa</span></a></li>
+                        <li class="footer-link"><a href="#about"><i class="fas fa-chevron-right"></i><span data-i18n="menu-about">Çalıştay Hakkında</span></a></li>
+                        <li class="footer-link"><a href="#topics"><i class="fas fa-chevron-right"></i><span data-i18n="menu-topics">Konular</span></a></li>
+                        <li class="footer-link"><a href="#dates"><i class="fas fa-chevron-right"></i><span data-i18n="menu-dates">Önemli Tarihler</span></a></li>
+                        <li class="footer-link"><a href="#presentations"><i class="fas fa-chevron-right"></i><span data-i18n="menu-presentations">Kabul Edilen Bildiriler</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h4 data-i18n="footer-contact-title">İletişim</h4>
+                    <ul class="footer-contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-i18n="meta-venue-val">ÇOMÜ Eğitim Fakültesi, Anafartalar Yerleşkesi, Çanakkale</span>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <span data-i18n="contact-email-val">Yakında duyurulacaktır.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright" data-i18n="footer-copyright">
+                    © 2026 <strong>Çanakkale Onsekiz Mart Üniversitesi</strong>. Tüm hakları saklıdır.
+                </div>
+                <div class="footer-dev" data-i18n="footer-dev">
+                    Tasarım & Entegrasyon: Antigravity AI
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Javascript Code -->
+    <script src="script.js"></script>
+</body>
+</html>

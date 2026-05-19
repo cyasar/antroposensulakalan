@@ -1,0 +1,195 @@
+Sen profesyonel bir web tasarımcısı, akademik etkinlik web sitesi geliştiricisi ve kurumsal arayüz uzmanısın.
+
+Aşağıdaki akademik çalıştay için modern, etkileyici, güven veren, kurumsal ve bilimsel kimliği güçlü bir web sayfası tasarla ve kodla.
+
+ÇALIŞTAY ADI:
+Türkiye’de Antroposen Çağında Sulak Alanlarda Ekolojik Riskler Çalıştayı
+
+ALT BAŞLIK:
+Doç. Dr. T. Ahmet Ertek Onuruna
+
+DÜZENLEME KURULU BAŞKANI:
+Prof. Dr. Ahmet Evren ERGİNAL
+Çanakkale Onsekiz Mart Üniversitesi
+Eğitim Fakültesi, Coğrafya Eğitimi ABD
+
+TARİH:
+22–24 Ekim 2026
+
+YER:
+Çanakkale Onsekiz Mart Üniversitesi
+Eğitim Fakültesi, Anafartalar Yerleşkesi, Çanakkale
+
+GENEL AMAÇ:
+Bu çalıştay, Türkiye’de Antroposen çağında sulak alanların karşı karşıya kaldığı ekolojik riskleri, insan kaynaklı baskıları, iklim değişikliği etkilerini, yönetim sorunlarını ve sürdürülebilir çözüm yaklaşımlarını çok disiplinli bir perspektifle tartışmayı amaçlamaktadır. Çalıştay, Doç. Dr. T. Ahmet Ertek’in Antroposen çağındaki ortam degradasyonu alanındaki bilimsel katkılarına ithafen düzenlenmektedir.
+
+TASARIM DİLİ:
+- Akademik, zarif, güven veren ve modern bir tasarım olsun.
+- Sulak alanlar, göller, deltalar, sazlıklar, su, ekolojik denge, iklim değişikliği ve Antroposen temasını görsel olarak hissettirsin.
+- Renk paleti: koyu lacivert, derin yeşil, su mavisi, açık gri ve beyaz tonları.
+- Tasarım sade ama etkileyici olsun; aşırı renkli, amatör veya kalabalık görünmesin.
+- Üniversite ve akademik çalıştay ciddiyetine uygun olsun.
+- Responsive tasarım olsun; mobil, tablet ve masaüstünde kusursuz çalışsın.
+- Türkçe karakter desteği tam olsun.
+- SEO uyumlu HTML yapısı kullanılsın.
+- Erişilebilirlik kurallarına dikkat edilsin.
+
+TEKNİK İSTEKLER:
+- HTML5, CSS3 ve sade JavaScript kullan.
+- Harici framework kullanma; Bootstrap zorunlu değil. Ancak temiz ve modern CSS ile profesyonel görünüm oluştur.
+- Tek sayfalık modern landing page yapısı olsun.
+- Kodlar açıklamalı, düzenli ve geliştirilebilir olsun.
+- Sayfa hızlı açılsın.
+- Menü sabit/sticky olabilir.
+- Yumuşak kaydırma efekti olsun.
+- Bölümler arasında zarif geçişler olsun.
+- Bildiri konuları kart yapısında verilsin.
+- Geri sayım alanı eklenebilir.
+- “Bildiri Gönder”, “Program”, “Duyuru”, “İletişim” butonları olsun. Şimdilik bağlantılar # olarak bırakılabilir.
+- Web sayfası ileride WordPress’e veya PHP tabanlı bir siteye kolayca entegre edilebilecek şekilde yazılsın.
+
+SAYFA BÖLÜMLERİ:
+
+1. ÜST MENÜ
+Menüde şu başlıklar yer alsın:
+- Ana Sayfa
+- Çalıştay Hakkında
+- Konular
+- Önemli Tarihler
+- Bildiri Gönderimi
+- Düzenleme Kurulu
+- Yayın Olanakları
+- İletişim
+
+2. HERO / AÇILIŞ ALANI
+Büyük ve etkileyici bir açılış alanı oluştur.
+Arka planda sulak alan, göl, sazlık, delta veya su ekosistemi hissi veren koyu tonlu modern bir görsel/gradient kullanılabilir.
+
+Hero alanında şu metinler yer alsın:
+
+Türkiye’de Antroposen Çağında Sulak Alanlarda Ekolojik Riskler Çalıştayı
+
+Doç. Dr. T. Ahmet Ertek Onuruna
+
+22–24 Ekim 2026 | Çanakkale Onsekiz Mart Üniversitesi
+
+Alt açıklama:
+Sulak alan ekosistemlerinde ekolojik riskler, iklim değişikliği, insan baskıları, doğa temelli çözümler ve dijital izleme teknolojileri üzerine çok disiplinli bir bilimsel buluşma.
+
+Butonlar:
+- Bildiri Gönder
+- Çalıştay Hakkında
+- Konuları İncele
+
+3. ÇALIŞTAY HAKKINDA
+Bu bölümde akademik ve etkileyici bir metin yaz:
+Sulak alanların biyolojik çeşitlilik, karbon depolama, su döngüsünün düzenlenmesi ve kıyı koruma bakımından kritik ekosistemler olduğu vurgulansın.
+Antroposen çağında insan faaliyetleri, iklim değişikliği, arazi kullanım değişimleri, kentsel yayılma, tarımsal yoğunlaşma, turizm baskısı ve hidromorfolojik müdahalelerin sulak alanları çok boyutlu risklerle karşı karşıya bıraktığı anlatılsın.
+Çalıştayın amacının bu riskleri bilimsel, çok disiplinli ve çözüm odaklı biçimde tartışmak olduğu belirtilsin.
+
+4. ONURUNA DÜZENLENEN BÖLÜM
+Ayrı, saygın ve sade bir bölüm oluştur:
+“Doç. Dr. T. Ahmet Ertek Onuruna”
+Bu bölümde şu vurgu yapılsın:
+Bu çalıştay, Doç. Dr. T. Ahmet Ertek’in Antroposen çağında ortam degradasyonu, çevresel değişim ve coğrafi süreçler alanındaki bilimsel katkılarına saygı amacıyla düzenlenmektedir.
+
+5. TEMATİK ODAKLAR / BİLDİRİ KONULARI
+Konu başlıklarını kartlar halinde göster.
+Kartlarda ikonlar kullanılabilir.
+
+Konu başlıkları:
+- Sulak alan ekosistemlerinin fiziksel, hidrolojik ve ekolojik dinamikleri
+- Kıyı lagünleri, deltalar, göller ve taşkın düzlüklerinde çevresel değişimler
+- Deniz–kara etkileşimi ve morfolojik süreçler
+- Arazi kullanımı/arazi örtüsü değişimleri ve sulak alan baskıları
+- Kentsel yayılma, turizm, sanayi ve tarımsal faaliyetlerin etkileri
+- Hidromorfolojik müdahaleler ve su rejimi değişimleri
+- Su kalitesi, kirlilik yükleri ve ötrofikasyon süreçleri
+- Sediment taşınımı ve sulak alan sistem dengeleri
+- Biyoçeşitlilik kaybı, habitat parçalanması ve ekosistem bozulmaları
+- İstilacı türler ve ekolojik dayanıklılık sorunları
+- İklim değişikliği, kuraklık ve ekstrem olayların etkileri
+- Deniz seviyesi yükselmesi ve kıyı taşkın riskleri
+- Ekolojik risk analizi ve kırılganlık değerlendirmeleri
+- Sulak alan koruma politikaları ve yönetişim yaklaşımları
+- Ekosistem temelli yönetim ve sürdürülebilir planlama
+- Doğa temelli çözümler ve sulak alan restorasyonu
+- Ramsar alanları ve koruma-kullanma dengesi
+- CBS, uzaktan algılama ve mekânsal analiz uygulamaları
+- Yapay zekâ, büyük veri ve dijital ikiz teknolojileri
+- Karar destek sistemleri ve sürdürülebilir yönetim araçları
+
+6. NEDEN KATILMALISINIZ?
+Bu bölümde 4 veya 5 maddelik güçlü bir akademik motivasyon alanı oluştur:
+- Türkiye’de sulak alan risklerini çok disiplinli bir bakışla tartışmak
+- İklim değişikliği ve Antroposen bağlamında güncel bilimsel yaklaşımları değerlendirmek
+- CBS, uzaktan algılama, yapay zekâ ve dijital ikiz teknolojilerinin uygulamalarını paylaşmak
+- Doğa temelli çözümler ve restorasyon yaklaşımlarını tartışmak
+- Seçili bildiriler için indeksli dergide özel sayı yayını olanağına katkı sunmak
+
+7. ÖNEMLİ BİLGİLER
+Bu bölümde üç veya dört bilgi kutusu oluştur:
+
+Tarih:
+22–24 Ekim 2026
+
+Yer:
+Çanakkale Onsekiz Mart Üniversitesi, Eğitim Fakültesi, Anafartalar Yerleşkesi
+
+Bildiri Sayısı:
+Bilimsel kalite ve oturum düzeni amacıyla en fazla 20 bildiri kabul edilecektir.
+
+Değerlendirme:
+Bildiriler bilimsel yeterlilik, özgünlük ve çalıştay teması ile uyum bakımından hakem değerlendirmesine alınacaktır.
+
+8. YAYIN OLANAKLARI
+Bu bölümde özel sayı vurgusu yap:
+Çalıştay kapsamında kabul edilen seçili bildirilerin SCI kapsamındaki indeksli bir dergide özel sayı olarak yayımlanması planlanmaktadır.
+Bu ifade dikkat çekici ama akademik ciddiyete uygun biçimde verilsin.
+Kesin yayın garantisi gibi değil, “planlanmaktadır” ifadesiyle yazılsın.
+
+9. DÜZENLEME KURULU BAŞKANI
+Kurumsal ve sade bir profil kartı oluştur:
+
+Prof. Dr. Ahmet Evren ERGİNAL
+Düzenleme Kurulu Başkanı
+Çanakkale Onsekiz Mart Üniversitesi
+Eğitim Fakültesi
+Coğrafya Eğitimi Anabilim Dalı
+
+10. BİLDİRİ GÖNDERİMİ
+Bu bölümde başvuru alanı hazırla.
+Şimdilik buton bağlantısını # bırak.
+Metin:
+Çalıştay kapsamında sunulacak bildiriler, bilimsel yeterlilik, özgünlük ve çalıştay temasıyla uyum kriterleri doğrultusunda değerlendirilecektir.
+
+Buton:
+Bildiri Gönderim Sistemi
+
+11. İLETİŞİM
+Basit ve kurumsal bir iletişim alanı oluştur.
+E-posta alanı şimdilik boş veya “yakında duyurulacaktır” şeklinde olabilir.
+Adres:
+Çanakkale Onsekiz Mart Üniversitesi
+Eğitim Fakültesi, Anafartalar Yerleşkesi, Çanakkale
+
+12. FOOTER
+Footer’da şu bilgiler yer alsın:
+Türkiye’de Antroposen Çağında Sulak Alanlarda Ekolojik Riskler Çalıştayı
+Doç. Dr. T. Ahmet Ertek Onuruna
+© 2026 Çanakkale Onsekiz Mart Üniversitesi
+
+TASARIM DETAYLARI:
+- Hero alanında büyük başlık ve zarif tipografi kullan.
+- Kartlarda hover efekti olsun.
+- Sayfa boyunca bilimsel ve kurumsal görünüm korunsun.
+- Düğmeler yuvarlatılmış, modern ve zarif olsun.
+- Bölüm başlıkları güçlü ama sade olsun.
+- Arka planlarda hafif gradient, su dalgası hissi veren yumuşak formlar veya organik çizgiler kullanılabilir.
+- Görsel kullanılacaksa telifsiz/placeholder yapı kullan; daha sonra gerçek görsellerle değiştirilebilir.
+- Kod içinde görsel alanlarını yorum satırıyla belirt.
+
+ÇIKTI:
+Bana tek parça, çalışır durumda bir `index.html` dosyası üret.
+CSS ve JavaScript aynı dosya içinde yer alsın.
+Kod doğrudan kopyalanıp çalıştırılabilir olsun.
