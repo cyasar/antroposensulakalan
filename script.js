@@ -553,7 +553,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        updateWetlandMapPopups();
+        if (WETLANDS_MAP_ENABLED) updateWetlandMapPopups();
     }
     
     // Bind buttons
@@ -794,8 +794,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ---------------------------------------------------------
-    // TÜRKİYE SULAK ALANLAR HARİTASI (DKMP 138 + OpenStreetMap)
+    // TÜRKİYE SULAK ALANLAR HARİTASI (DKMP 138 + OpenStreetMap) — geçici kapalı
     // ---------------------------------------------------------
+    const WETLANDS_MAP_ENABLED = false;
+
     const wetlandStatusColors = {
         ramsar: { fill: '#fbbf24', stroke: '#f59e0b' },
         national: { fill: '#38bdf8', stroke: '#0ea5e9' },
@@ -904,6 +906,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function initTurkeyWetlandsMap() {
+        if (!WETLANDS_MAP_ENABLED) return;
         const mapEl = document.getElementById('turkey-wetlands-map');
         if (!mapEl || typeof L === 'undefined') return;
 
