@@ -1748,6 +1748,13 @@ header.scrolled {
     line-height: 1.8;
 }
 
+.presentations-intro-text .pres-note {
+    margin-top: 16px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
 .presentations-intro-action {
     display: flex;
     justify-content: flex-end;

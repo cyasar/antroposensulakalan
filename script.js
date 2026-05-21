@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Special Feature Box
             "special-box-title": "Kabul Edilen Bildirilerin Duyurulması Hakkında",
-            "special-box-desc": "Özet bildiri gönderim aşaması tamamlanmıştır. Çalıştay kapsamında sunulmak üzere hakem heyeti tarafından kabul edilen çalışmalar aşağıda listelenmiştir.",
+            "special-box-desc": "Özet bildiri değerlendirme süreci devam etmektedir. Bilim kurulu tarafından kabul edilen bildirilerin listesi 5 Eylül 2026 tarihinde duyurulacaktır.",
             
             // Publication Section
             "pub-subtitle": "Akademik İndeks Fırsatı",
@@ -189,14 +189,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "committee-dept": "Coğrafya Eğitimi Anabilim Dalı",
             "committee-fac": "Eğitim Fakültesi",
             "committee-uni": "Çanakkale Onsekiz Mart Üniversitesi",
+            "committee-role": "Düzenleme Kurulu Başkanı",
             
-            // Presentations List Section (Replacing Submission)
-            "pres-subtitle": "Kabul Edilen Çalışmalar",
-            "pres-title": "Kabul Edilen Bildiriler Listesi",
-            "pres-desc": "Çalıştay bilim kurulu tarafından onaylanan ve 22–24 Ekim tarihleri arasında sunulacak olan seçkin bilimsel bildiriler.",
-            "pres-search-placeholder": "Bildiri adı veya yazar adı ile ara...",
+            // Presentations Section
+            "pres-subtitle": "Bilimsel Bildiriler",
+            "pres-title": "Çalıştay Bildirileri",
+            "pres-desc-short": "Çalıştay bilim kurulu tarafından onaylanan ve 22–24 Ekim tarihleri arasında sunulacak seçkin bilimsel bildiriler hakkında bilgi.",
+            "pres-desc": "Çalıştay bilim kurulu tarafından onaylanan ve 22–24 Ekim tarihleri arasında sunulacak olan seçkin bilimsel bildiriler. Çağrı metnine ulaşmak için dökümanı indirebilirsiniz.",
+            "pres-note": "Kabul edilen bildirilerin ayrıntılı listesi, değerlendirme süreci tamamlandıktan sonra bu sayfada ilan edilecektir.",
             "btn-download-pdf": "Çalıştay Çağrı Metnini İndir (PDF)",
-            "pres-status-accepted": "KABUL EDİLDİ",
             
             // Contact Section
             "contact-subtitle": "İletişim Portalı",
@@ -386,7 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Special Feature Box
             "special-box-title": "Regarding Announcement of Accepted Papers",
-            "special-box-desc": "The abstract submission stage has closed. The list of papers accepted by the peer-review committee to be presented during the workshop is listed below.",
+            "special-box-desc": "Abstract review is in progress. The list of papers accepted by the scientific committee will be announced on 5 September 2026.",
             
             // Publication Section
             "pub-subtitle": "Academic Index Opportunity",
@@ -407,14 +408,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "committee-dept": "Department of Geography Education",
             "committee-fac": "Faculty of Education",
             "committee-uni": "Çanakkale Onsekiz Mart University",
+            "committee-role": "Chair of the Organizing Committee",
             
-            // Presentations List Section (Replacing Submission)
-            "pres-subtitle": "Accepted Submissions",
-            "pres-title": "List of Accepted Papers",
-            "pres-desc": "Outstanding scientific papers approved by the scientific committee to be presented at the workshop between 22–24 October.",
-            "pres-search-placeholder": "Search by paper title or author name...",
+            // Presentations Section
+            "pres-subtitle": "Scientific Papers",
+            "pres-title": "Workshop Papers",
+            "pres-desc-short": "Information on outstanding scientific papers to be presented at the workshop between 22–24 October, following approval by the scientific committee.",
+            "pres-desc": "Outstanding scientific papers approved by the scientific committee to be presented at the workshop between 22–24 October. You may download the call for papers document below.",
+            "pres-note": "The detailed list of accepted papers will be published on this page once the review process is complete.",
             "btn-download-pdf": "Download Call for Papers (PDF)",
-            "pres-status-accepted": "ACCEPTED",
             
             // Contact Section
             "contact-subtitle": "Contact Portal",
@@ -446,118 +448,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // ---------------------------------------------------------
-    // 2. KABUL EDİLEN BİLDİRİLER VERİTABANI (ACCEPTED PAPERS DATABASE)
-    // ---------------------------------------------------------
-    const acceptedPapers = [
-        {
-            id: 1,
-            tr: {
-                title: "Çanakkale Kıyı Lagünlerinde Antroposen Dönemi Ağır Metal Kirliliği ve Ekolojik Risk Değerlendirmesi",
-                authors: "Prof. Dr. Ahmet Evren Erginal, Dr. Cumali Yaşar",
-                org: "Çanakkale Onsekiz Mart Üniversitesi",
-                category: "fiziksel"
-            },
-            en: {
-                title: "Anthropocene Heavy Metal Pollution and Ecological Risk Assessment in Coastal Lagoons of Çanakkale",
-                authors: "Prof. Dr. Ahmet Evren Erginal, Dr. Cumali Yasar",
-                org: "Canakkale Onsekiz Mart University",
-                category: "fiziksel"
-            }
-        },
-        {
-            id: 2,
-            tr: {
-                title: "Uluabat Gölü Su Seviyesi Değişimlerinin Makine Öğrenmesi Yöntemleriyle Mekânsal Analizi ve Gelecek Projeksiyonları",
-                authors: "Doç. Dr. Mustafa Kıvanç, Araş. Gör. Esra Sevim",
-                org: "İstanbul Teknik Üniversitesi",
-                category: "teknoloji"
-            },
-            en: {
-                title: "Spatial Analysis and Future Projections of Water Level Fluctuations in Lake Uluabat Using Machine Learning",
-                authors: "Assoc. Prof. Dr. Mustafa Kivanc, Res. Asst. Esra Sevim",
-                org: "Istanbul Technical University",
-                category: "teknoloji"
-            }
-        },
-        {
-            id: 3,
-            tr: {
-                title: "Ramsar Alanı Sulak Alanlarında Kentsel Yayılmanın CBS Tabanlı Kırılganlık Modellemesi: Gediz Deltası Örneği",
-                authors: "Dr. Öğr. Üyesi Caner Yılmaz, Prof. Dr. Selim Hakan",
-                org: "Ege Üniversitesi",
-                category: "teknoloji"
-            },
-            en: {
-                title: "GIS-Based Vulnerability Modeling of Urban Expansion in Ramsar Wetland Sites: A Case Study of Gediz Delta",
-                authors: "Asst. Prof. Dr. Caner Yilmaz, Prof. Dr. Selim Hakan",
-                org: "Ege University",
-                category: "teknoloji"
-            }
-        },
-        {
-            id: 4,
-            tr: {
-                title: "Kızılırmak Deltası Sulak Alanında Doğa Temelli Çözümler ve Ekolojik Restorasyon Önerileri",
-                authors: "Prof. Dr. Ayşe Gültekin, Dr. Hakan Demir",
-                org: "Ondokuz Mayıs Üniversitesi",
-                category: "ekolojik"
-            },
-            en: {
-                title: "Nature-Based Solutions and Ecological Restoration Proposals in the Kizilirmak Delta Wetland",
-                authors: "Prof. Dr. Ayse Gultekin, Dr. Hakan Demir",
-                org: "Ondokuz Mayis University",
-                category: "ekolojik"
-            }
-        },
-        {
-            id: 5,
-            tr: {
-                title: "İklim Değişikliği ve Kuraklık Baskısı Altındaki Göllerin Spektral İndekslerle Zamansal Değişim Analizi",
-                authors: "Dr. Yusuf Selim Ak, Dr. Zeynep Bilge",
-                org: "Hacettepe Üniversitesi",
-                category: "ekolojik"
-            },
-            en: {
-                title: "Temporal Change Analysis of Lakes Under Climate Change and Drought Pressure Using Spectral Indices",
-                authors: "Dr. Yusuf Selim Ak, Dr. Zeynep Bilge",
-                org: "Hacettepe University",
-                category: "ekolojik"
-            }
-        },
-        {
-            id: 6,
-            tr: {
-                title: "Türkiye Kıyı Deltalarında Deniz Seviyesi Yükselmesi ve Tuzlu Su Girişimi Ekolojik Risk Modellemesi",
-                authors: "Prof. Dr. Halil İbrahim, Doç. Dr. Serkan Karas",
-                org: "Orta Doğu Teknik Üniversitesi",
-                category: "fiziksel"
-            },
-            en: {
-                title: "Sea-Level Rise and Saltwater Intrusion Ecological Risk Modeling in Coastal Deltas of Türkiye",
-                authors: "Prof. Dr. Halil Ibrahim, Assoc. Prof. Dr. Serkan Karas",
-                org: "Middle East Technical University",
-                category: "fiziksel"
-            }
-        },
-        {
-            id: 7,
-            tr: {
-                title: "Türkiye’de Sulak Alan Yönetim Politikaları, Ramsar Sözleşmesi ve Koruma-Kullanma Dengesi Analizi",
-                authors: "Dr. Elif Nazlı Aksoy, Prof. Dr. Tarık Şen",
-                org: "Ankara Üniversitesi",
-                category: "yonetim"
-            },
-            en: {
-                title: "Wetland Conservation Policies in Türkiye, Ramsar Convention and Conservation-Use Balance Analysis",
-                authors: "Dr. Elif Nazli Aksoy, Prof. Dr. Tarik Sen",
-                org: "Ankara University",
-                category: "yonetim"
-            }
-        }
-    ];
-
-    // ---------------------------------------------------------
-    // 3. DİL DEĞİŞTİRME MEKANİZMASI (LANGUAGE SWITCH ENGINE)
+    // 2. DİL DEĞİŞTİRME MEKANİZMASI (LANGUAGE SWITCH ENGINE)
     // ---------------------------------------------------------
     let currentLang = localStorage.getItem('workshop_lang') || 'tr';
     
@@ -595,9 +486,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
-        
-        // Re-render accepted presentations list with correct language
-        renderPresentations();
     }
     
     // Bind buttons
@@ -610,66 +498,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ---------------------------------------------------------
-    // 4. KABUL EDİLEN BİLDİRİLER LİSTELEME & ARAMA (PRESENTATIONS RENDERING & SEARCH)
-    // ---------------------------------------------------------
-    const searchInput = document.getElementById('pres-search-input');
-    const presentationsContainer = document.getElementById('presentations-list');
-    
-    function renderPresentations() {
-        if (!presentationsContainer) return;
-        
-        const filterVal = searchInput ? searchInput.value.toLowerCase().trim() : '';
-        presentationsContainer.innerHTML = '';
-        
-        const filtered = acceptedPapers.filter(paper => {
-            const text = paper[currentLang];
-            return text.title.toLowerCase().includes(filterVal) || 
-                   text.authors.toLowerCase().includes(filterVal) || 
-                   text.org.toLowerCase().includes(filterVal);
-        });
-        
-        if (filtered.length === 0) {
-            presentationsContainer.innerHTML = `
-                <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">
-                    <i class="fas fa-search" style="font-size: 2rem; margin-bottom: 12px; color: var(--accent-cyan);"></i>
-                    <p>${currentLang === 'tr' ? 'Aradığınız kriterlere uygun bildiri bulunamadı.' : 'No papers found matching your search criteria.'}</p>
-                </div>
-            `;
-            return;
-        }
-        
-        filtered.forEach(paper => {
-            const data = paper[currentLang];
-            const firstLetter = data.authors.charAt(0);
-            
-            const card = document.createElement('div');
-            card.className = 'pres-card reveal-element revealed';
-            card.setAttribute('data-category', data.category);
-            
-            card.innerHTML = `
-                <div class="pres-header">
-                    <span class="pres-status-badge" data-i18n="pres-status-accepted">${translations[currentLang]["pres-status-accepted"]}</span>
-                    <i class="fas fa-file-alt pres-icon"></i>
-                </div>
-                <h4 class="pres-title">${data.title}</h4>
-                <div class="pres-authors">
-                    <div class="pres-author-avatar">${firstLetter}</div>
-                    <div class="pres-author-info">
-                        <h5>${data.authors}</h5>
-                        <p>${data.org}</p>
-                    </div>
-                </div>
-            `;
-            presentationsContainer.appendChild(card);
-        });
-    }
-    
-    if (searchInput) {
-        searchInput.addEventListener('input', renderPresentations);
-    }
-
-    // ---------------------------------------------------------
-    // 5. GERİ SAYIM SAYAÇ SİSTEMİ (COUNTDOWN TIMER SYSTEM)
+    // 3. GERİ SAYIM SAYAÇ SİSTEMİ (COUNTDOWN TIMER SYSTEM)
     // ---------------------------------------------------------
     const targetDate = new Date('2026-10-22T09:00:00+03:00').getTime(); // Workshop Start Date: Oct 22, 2026
     
