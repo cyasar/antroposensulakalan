@@ -14,6 +14,11 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Leaflet (OpenStreetMap) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+    
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -50,6 +55,7 @@
                     <li><a href="#home" class="nav-link active" data-i18n="menu-home">Ana Sayfa</a></li>
                     <li><a href="#about" class="nav-link" data-i18n="menu-about">Çalıştay Hakkında</a></li>
                     <li><a href="#topics" class="nav-link" data-i18n="menu-topics">Konular</a></li>
+                    <li><a href="#wetlands-map" class="nav-link" data-i18n="menu-map">Sulak Alanlar Haritası</a></li>
                     <li><a href="#dates" class="nav-link" data-i18n="menu-dates">Önemli Tarihler</a></li>
                     <li><a href="#presentations" class="nav-link" data-i18n="menu-presentations">Kabul Edilen Bildiriler</a></li>
                     <li><a href="#committee" class="nav-link" data-i18n="menu-committee">Düzenleme Kurulu</a></li>
@@ -82,6 +88,7 @@
             <li><a href="#home" class="mobile-link" data-i18n="menu-home">Ana Sayfa</a></li>
             <li><a href="#about" class="mobile-link" data-i18n="menu-about">Çalıştay Hakkında</a></li>
             <li><a href="#topics" class="mobile-link" data-i18n="menu-topics">Konular</a></li>
+            <li><a href="#wetlands-map" class="mobile-link" data-i18n="menu-map">Sulak Alanlar Haritası</a></li>
             <li><a href="#dates" class="mobile-link" data-i18n="menu-dates">Önemli Tarihler</a></li>
             <li><a href="#presentations" class="mobile-link" data-i18n="menu-presentations">Kabul Edilen Bildiriler</a></li>
             <li><a href="#committee" class="mobile-link" data-i18n="menu-committee">Düzenleme Kurulu</a></li>
@@ -511,6 +518,79 @@
                     <span class="topic-tag" data-i18n="filter-technology">CBS & Yapay Zeka</span>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       TURKEY WETLANDS MAP (OpenStreetMap)
+       ========================================================================== -->
+    <section id="wetlands-map" class="wetlands-map-section">
+        <div class="container">
+            <div class="section-header reveal-element">
+                <span class="section-subtitle" data-i18n="map-subtitle">Coğrafi Kapsam</span>
+                <h2 class="section-title" data-i18n="map-title">Türkiye Sulak Alanlar Haritası</h2>
+                <p class="section-description" data-i18n="map-desc">Türkiye’deki önemli göller, deltalar, lagünler ve sulak alan koruma alanları OpenStreetMap üzerinde işaretlenmiştir. İşarete tıklayarak ayrıntılı bilgi alabilirsiniz.</p>
+                <p class="map-source-note">
+                    <span data-i18n="map-source">Kaynak:</span>
+                    <a href="https://www.tarimorman.gov.tr/DKMP/Menu/31/Sulak-Alanlar" target="_blank" rel="noopener">DKMP – Sulak Alanlar</a>
+                    (138 tescilli alan)
+                </p>
+            </div>
+
+            <div class="map-stats-row reveal-element">
+                <div class="map-stat-card"><span class="map-stat-num" id="stat-total">138</span><span data-i18n="map-stat-total">Toplam Sulak Alan</span></div>
+                <div class="map-stat-card map-stat-ramsar"><span class="map-stat-num" id="stat-ramsar">14</span><span data-i18n="map-stat-ramsar">Ramsar Alanı</span></div>
+                <div class="map-stat-card map-stat-national"><span class="map-stat-num" id="stat-national">59</span><span data-i18n="map-stat-national">Ulusal Öneme Haiz</span></div>
+                <div class="map-stat-card map-stat-local"><span class="map-stat-num" id="stat-local">65</span><span data-i18n="map-stat-local">Mahalli Öneme Haiz</span></div>
+            </div>
+
+            <div class="wetlands-map-layout reveal-element">
+                <div class="wetlands-map-legend">
+                    <h4 data-i18n="map-legend-title">Gösterge</h4>
+                    <ul class="map-legend-list">
+                        <li><span class="legend-dot legend-ramsar"></span><span data-i18n="map-legend-ramsar">Ramsar Alanı</span></li>
+                        <li><span class="legend-dot legend-national"></span><span data-i18n="map-legend-national">Ulusal Öneme Haiz</span></li>
+                        <li><span class="legend-dot legend-local"></span><span data-i18n="map-legend-local">Mahalli Öneme Haiz</span></li>
+                    </ul>
+                    <h4 class="map-legend-sub" data-i18n="map-filter-title">Filtrele</h4>
+                    <div class="map-filter-btns">
+                        <button type="button" class="map-filter-btn active" data-filter="all" data-i18n="map-filter-all">Tümü</button>
+                        <button type="button" class="map-filter-btn" data-filter="ramsar" data-i18n="map-filter-ramsar">Ramsar</button>
+                        <button type="button" class="map-filter-btn" data-filter="national" data-i18n="map-filter-national">Ulusal</button>
+                        <button type="button" class="map-filter-btn" data-filter="local" data-i18n="map-filter-local">Mahalli</button>
+                    </div>
+                    <div class="map-search-wrap">
+                        <i class="fas fa-search"></i>
+                        <input type="search" id="wetland-search" placeholder="İl veya sulak alan adı..." data-i18n="map-search-placeholder">
+                    </div>
+                    <p class="map-count"><span id="wetland-count">0</span> <span data-i18n="map-count-label">haritada gösterilen</span></p>
+                </div>
+                <div class="wetlands-map-wrap">
+                    <div id="turkey-wetlands-map" class="turkey-wetlands-map" role="application" aria-label="Türkiye sulak alanları haritası"></div>
+                    <p class="map-attribution">
+                        <span data-i18n="map-attribution">Harita verisi</span>
+                        © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="wetlands-table-wrap reveal-element">
+                <h3 class="wetlands-table-title" data-i18n="map-table-title">Tescilli Sulak Alanlar Listesi</h3>
+                <div class="wetlands-table-scroll">
+                    <table class="wetlands-table" id="wetlands-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="map-th-no">No</th>
+                                <th data-i18n="map-th-province">İl</th>
+                                <th data-i18n="map-th-name">Sulak Alan</th>
+                                <th data-i18n="map-th-status">Tescil Statüsü</th>
+                                <th data-i18n="map-th-link">Detay</th>
+                            </tr>
+                        </thead>
+                        <tbody id="wetlands-table-body"></tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
@@ -960,7 +1040,8 @@
         </div>
     </footer>
 
-    <!-- Core Javascript Code -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

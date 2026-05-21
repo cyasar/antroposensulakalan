@@ -1037,6 +1037,381 @@ header.scrolled {
 .topic-card[data-category="teknoloji"] .topic-tag::before { background: #d946ef; }
 
 /* ==========================================================================
+   TURKEY WETLANDS MAP (OpenStreetMap / Leaflet)
+   ========================================================================== */
+.wetlands-map-section {
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.wetlands-map-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(6, 182, 212, 0.06) 0%, transparent 55%);
+    pointer-events: none;
+}
+
+.wetlands-map-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 28px;
+    align-items: stretch;
+    position: relative;
+    z-index: 1;
+}
+
+.wetlands-map-legend {
+    background: var(--bg-glass);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 24px;
+    backdrop-filter: blur(12px);
+}
+
+.wetlands-map-legend h4 {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    color: var(--accent-cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.map-legend-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.map-legend-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid rgba(248, 250, 252, 0.6);
+}
+
+.legend-ramsar { background: #fbbf24; border-color: #f59e0b; }
+.legend-national { background: #38bdf8; border-color: #0ea5e9; }
+.legend-local { background: #94a3b8; border-color: #64748b; }
+
+.map-source-note {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.map-source-note a {
+    color: var(--accent-cyan);
+}
+
+.map-stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.map-stat-card {
+    background: var(--bg-glass);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 18px 16px;
+    text-align: center;
+}
+
+.map-stat-num {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 800;
+    font-family: var(--font-display);
+    color: var(--accent-cyan);
+    line-height: 1.2;
+}
+
+.map-stat-card span:last-child {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+    display: block;
+}
+
+.map-stat-ramsar .map-stat-num { color: #fbbf24; }
+.map-stat-national .map-stat-num { color: #38bdf8; }
+.map-stat-local .map-stat-num { color: #94a3b8; }
+
+.map-legend-sub {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.map-filter-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.map-filter-btn {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.map-filter-btn:hover,
+.map-filter-btn.active {
+    background: rgba(6, 182, 212, 0.15);
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+.map-search-wrap {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+}
+
+.map-search-wrap i {
+    color: var(--text-muted);
+    margin-right: 8px;
+    font-size: 0.85rem;
+}
+
+.map-search-wrap input {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    width: 100%;
+    outline: none;
+}
+
+.wetlands-table-wrap {
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.wetlands-table-title {
+    font-size: 1.15rem;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.wetlands-table-scroll {
+    max-height: 360px;
+    overflow: auto;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.wetlands-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.wetlands-table thead {
+    position: sticky;
+    top: 0;
+    background: var(--bg-secondary);
+    z-index: 2;
+}
+
+.wetlands-table th,
+.wetlands-table td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.wetlands-table th {
+    color: var(--accent-cyan);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.wetlands-table tbody tr {
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.wetlands-table tbody tr:hover {
+    background: rgba(6, 182, 212, 0.08);
+}
+
+.wetlands-table-empty {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 24px !important;
+}
+
+.wetland-status-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+.status-badge-ramsar {
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+}
+
+.status-badge-national {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+}
+
+.status-badge-local {
+    background: rgba(148, 163, 184, 0.15);
+    color: #94a3b8;
+}
+
+.map-count {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.map-count span:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    font-family: var(--font-display);
+}
+
+.wetlands-map-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.turkey-wetlands-map {
+    height: 520px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(45, 212, 191, 0.2);
+    box-shadow: var(--shadow-glow);
+    overflow: hidden;
+    background: #0c1225;
+    z-index: 0;
+}
+
+.map-attribution {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: right;
+}
+
+.map-attribution a {
+    color: var(--accent-cyan);
+}
+
+.map-attribution a:hover {
+    text-decoration: underline;
+}
+
+/* Leaflet popup & controls – dark theme */
+.turkey-wetlands-map .leaflet-popup-content-wrapper {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border-radius: 12px;
+    border: 1px solid rgba(45, 212, 191, 0.25);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.turkey-wetlands-map .leaflet-popup-tip {
+    background: var(--bg-secondary);
+}
+
+.turkey-wetlands-map .leaflet-popup-content {
+    margin: 12px 14px;
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.wetland-popup h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.wetland-popup-ramsar {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.12);
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.wetland-popup p {
+    margin: 4px 0;
+    color: var(--text-secondary);
+}
+
+.turkey-wetlands-map .leaflet-control-zoom a {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.turkey-wetlands-map .leaflet-control-zoom a:hover {
+    background: var(--accent-teal);
+    color: var(--bg-primary);
+}
+
+.turkey-wetlands-map .leaflet-control-attribution {
+    background: rgba(5, 8, 20, 0.75);
+    color: var(--text-muted);
+    font-size: 0.65rem;
+}
+
+.turkey-wetlands-map .leaflet-control-attribution a {
+    color: var(--accent-cyan);
+}
+
+/* ==========================================================================
    WHY ATTEND BÖLÜMÜ
    ========================================================================== */
 .why-attend {
@@ -2322,6 +2697,22 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .wetlands-map-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .wetlands-map-legend {
+        order: 2;
+    }
+
+    .turkey-wetlands-map {
+        height: 420px;
+    }
+
+    .map-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -2370,5 +2761,13 @@ footer {
 
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+
+    .turkey-wetlands-map {
+        height: 360px;
+    }
+
+    .map-stats-row {
+        grid-template-columns: 1fr 1fr;
     }
 }

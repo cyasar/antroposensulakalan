@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "menu-home": "Ana Sayfa",
             "menu-about": "Çalıştay Hakkında",
             "menu-topics": "Konular",
+            "menu-map": "Sulak Alanlar Haritası",
             "menu-dates": "Önemli Tarihler",
             "menu-presentations": "Kabul Edilen Bildiriler",
             "menu-committee": "Düzenleme Kurulu",
@@ -135,6 +136,38 @@ document.addEventListener('DOMContentLoaded', () => {
             "why-sci-label-3": "İç Göller",
             "why-sci-label-4": "Koruma Alanları",
             
+            // Wetlands Map
+            "map-subtitle": "Coğrafi Kapsam",
+            "map-title": "Türkiye Sulak Alanlar Haritası",
+            "map-desc": "Türkiye’deki önemli göller, deltalar, lagünler ve sulak alan koruma alanları OpenStreetMap üzerinde işaretlenmiştir. İşarete tıklayarak ayrıntılı bilgi alabilirsiniz.",
+            "map-legend-title": "Gösterge",
+            "map-source": "Kaynak:",
+            "map-stat-total": "Toplam Sulak Alan",
+            "map-stat-ramsar": "Ramsar Alanı",
+            "map-stat-national": "Ulusal Öneme Haiz",
+            "map-stat-local": "Mahalli Öneme Haiz",
+            "map-legend-ramsar": "Ramsar Alanı",
+            "map-legend-national": "Ulusal Öneme Haiz",
+            "map-legend-local": "Mahalli Öneme Haiz",
+            "map-filter-title": "Filtrele",
+            "map-filter-all": "Tümü",
+            "map-filter-ramsar": "Ramsar",
+            "map-filter-national": "Ulusal",
+            "map-filter-local": "Mahalli",
+            "map-search-placeholder": "İl veya sulak alan adı...",
+            "map-count-label": "haritada gösterilen",
+            "map-attribution": "Harita verisi",
+            "map-table-title": "Tescilli Sulak Alanlar Listesi",
+            "map-th-no": "No",
+            "map-th-province": "İl",
+            "map-th-name": "Sulak Alan",
+            "map-th-status": "Tescil Statüsü",
+            "map-th-link": "Detay",
+            "map-popup-region": "İl",
+            "map-popup-status": "Tescil",
+            "map-popup-detail": "Ekotaban",
+            "map-no-results": "Eşleşen sulak alan bulunamadı.",
+            
             // Key Info Section
             "info-subtitle": "Katılım Koşulları",
             "info-title": "Önemli Bilgiler & Süreçler",
@@ -235,6 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "menu-home": "Home",
             "menu-about": "About",
             "menu-topics": "Topics",
+            "menu-map": "Wetlands Map",
             "menu-dates": "Important Dates",
             "menu-presentations": "Accepted Papers",
             "menu-committee": "Committee",
@@ -353,6 +387,38 @@ document.addEventListener('DOMContentLoaded', () => {
             "why-sci-label-2": "Deltas",
             "why-sci-label-3": "Inland Lakes",
             "why-sci-label-4": "Protected Areas",
+            
+            // Wetlands Map
+            "map-subtitle": "Geographic Scope",
+            "map-title": "Wetlands Map of Türkiye",
+            "map-desc": "Major lakes, deltas, lagoons and wetland conservation areas in Türkiye are marked on OpenStreetMap. Click a marker for details.",
+            "map-legend-title": "Legend",
+            "map-source": "Source:",
+            "map-stat-total": "Total Wetlands",
+            "map-stat-ramsar": "Ramsar Sites",
+            "map-stat-national": "National Importance",
+            "map-stat-local": "Local Importance",
+            "map-legend-ramsar": "Ramsar Site",
+            "map-legend-national": "National Importance",
+            "map-legend-local": "Local Importance",
+            "map-filter-title": "Filter",
+            "map-filter-all": "All",
+            "map-filter-ramsar": "Ramsar",
+            "map-filter-national": "National",
+            "map-filter-local": "Local",
+            "map-search-placeholder": "Province or wetland name...",
+            "map-count-label": "shown on map",
+            "map-attribution": "Map data",
+            "map-table-title": "Registered Wetlands List",
+            "map-th-no": "No",
+            "map-th-province": "Province",
+            "map-th-name": "Wetland",
+            "map-th-status": "Designation",
+            "map-th-link": "Detail",
+            "map-popup-region": "Province",
+            "map-popup-status": "Designation",
+            "map-popup-detail": "Ekotaban",
+            "map-no-results": "No matching wetlands found.",
             
             // Key Info Section
             "info-subtitle": "Participation Terms",
@@ -486,6 +552,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+        
+        updateWetlandMapPopups();
     }
     
     // Bind buttons
@@ -724,6 +792,184 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
+
+    // ---------------------------------------------------------
+    // TÜRKİYE SULAK ALANLAR HARİTASI (DKMP 138 + OpenStreetMap)
+    // ---------------------------------------------------------
+    const wetlandStatusColors = {
+        ramsar: { fill: '#fbbf24', stroke: '#f59e0b' },
+        national: { fill: '#38bdf8', stroke: '#0ea5e9' },
+        local: { fill: '#94a3b8', stroke: '#64748b' }
+    };
+
+    let turkeyWetlands = [];
+    let wetlandsMapInstance = null;
+    let wetlandClusterGroup = null;
+    let wetlandMarkerMap = new Map();
+    let wetlandFilterStatus = 'all';
+    let wetlandSearchQuery = '';
+
+    function buildWetlandPopup(site, lang) {
+        const data = site[lang];
+        const t = translations[lang];
+        const statusClass = `status-badge-${site.status}`;
+        const ekotabanLink = site.ekotabanId
+            ? `<p><a href="https://ekotaban.tarimorman.gov.tr/alan/${site.ekotabanId}" target="_blank" rel="noopener">${t['map-popup-detail']} →</a></p>`
+            : '';
+        return `
+            <div class="wetland-popup">
+                <h4>${data.name}</h4>
+                <p><strong>${t['map-popup-region']}:</strong> ${data.region}</p>
+                <p><strong>${t['map-popup-status']}:</strong> <span class="wetland-status-badge ${statusClass}">${data.typeLabel}</span></p>
+                ${ekotabanLink}
+            </div>
+        `;
+    }
+
+    function wetlandMatchesFilter(site) {
+        const q = wetlandSearchQuery.toLowerCase();
+        const data = site[currentLang];
+        const textMatch = !q || data.name.toLowerCase().includes(q) || data.region.toLowerCase().includes(q);
+        const statusMatch = wetlandFilterStatus === 'all' || site.status === wetlandFilterStatus;
+        return textMatch && statusMatch;
+    }
+
+    function refreshWetlandLayers() {
+        if (!wetlandClusterGroup) return;
+        wetlandClusterGroup.clearLayers();
+        let visible = 0;
+        turkeyWetlands.forEach(site => {
+            if (!wetlandMatchesFilter(site)) return;
+            const colors = wetlandStatusColors[site.status] || wetlandStatusColors.local;
+            const marker = L.circleMarker([site.lat, site.lng], {
+                radius: site.status === 'ramsar' ? 8 : 6,
+                fillColor: colors.fill,
+                color: colors.stroke,
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.9
+            });
+            marker.bindPopup(buildWetlandPopup(site, currentLang));
+            marker._wetlandNo = site.no;
+            wetlandClusterGroup.addLayer(marker);
+            wetlandMarkerMap.set(site.no, marker);
+            visible++;
+        });
+        const countEl = document.getElementById('wetland-count');
+        if (countEl) countEl.textContent = visible;
+        renderWetlandsTable();
+    }
+
+    function updateWetlandMapPopups() {
+        wetlandMarkerMap.forEach((marker, no) => {
+            const site = turkeyWetlands.find(w => w.no === no);
+            if (site) marker.setPopupContent(buildWetlandPopup(site, currentLang));
+        });
+        renderWetlandsTable();
+    }
+
+    function renderWetlandsTable() {
+        const tbody = document.getElementById('wetlands-table-body');
+        if (!tbody) return;
+        const t = translations[currentLang];
+        const filtered = turkeyWetlands.filter(wetlandMatchesFilter);
+        if (filtered.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="5" class="wetlands-table-empty">${t['map-no-results']}</td></tr>`;
+            return;
+        }
+        tbody.innerHTML = filtered.map(site => {
+            const data = site[currentLang];
+            const link = site.ekotabanId
+                ? `<a href="https://ekotaban.tarimorman.gov.tr/alan/${site.ekotabanId}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>`
+                : '—';
+            return `<tr data-no="${site.no}" class="wetland-row status-row-${site.status}">
+                <td>${site.no}</td>
+                <td>${data.region}</td>
+                <td>${data.name}</td>
+                <td><span class="wetland-status-badge status-badge-${site.status}">${data.statusShort}</span></td>
+                <td>${link}</td>
+            </tr>`;
+        }).join('');
+        tbody.querySelectorAll('.wetland-row').forEach(row => {
+            row.addEventListener('click', () => {
+                const no = parseInt(row.getAttribute('data-no'), 10);
+                const marker = wetlandMarkerMap.get(no);
+                const site = turkeyWetlands.find(w => w.no === no);
+                if (marker && wetlandsMapInstance && site) {
+                    wetlandsMapInstance.setView([site.lat, site.lng], 10, { animate: true });
+                    marker.openPopup();
+                }
+            });
+        });
+    }
+
+    async function initTurkeyWetlandsMap() {
+        const mapEl = document.getElementById('turkey-wetlands-map');
+        if (!mapEl || typeof L === 'undefined') return;
+
+        try {
+            const res = await fetch('./wetlands-dkmp.json');
+            const data = await res.json();
+            turkeyWetlands = data.wetlands || [];
+            ['stat-total', 'stat-ramsar', 'stat-national', 'stat-local'].forEach(id => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                const key = id.replace('stat-', '');
+                if (key === 'total') el.textContent = data.total || turkeyWetlands.length;
+                else el.textContent = data[key] ?? '';
+            });
+        } catch (e) {
+            console.warn('wetlands-dkmp.json yüklenemedi', e);
+            return;
+        }
+
+        wetlandsMapInstance = L.map(mapEl, { scrollWheelZoom: false }).setView([39.0, 35.0], 6);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(wetlandsMapInstance);
+
+        wetlandClusterGroup = typeof L.markerClusterGroup === 'function'
+            ? L.markerClusterGroup({ maxClusterRadius: 45, spiderfyOnMaxZoom: true, showCoverageOnHover: false })
+            : L.layerGroup();
+        wetlandsMapInstance.addLayer(wetlandClusterGroup);
+
+        refreshWetlandLayers();
+        const bounds = L.latLngBounds(turkeyWetlands.map(s => [s.lat, s.lng]));
+        wetlandsMapInstance.fitBounds(bounds.pad(0.06));
+
+        mapEl.addEventListener('mouseenter', () => wetlandsMapInstance.scrollWheelZoom.enable());
+        mapEl.addEventListener('mouseleave', () => wetlandsMapInstance.scrollWheelZoom.disable());
+
+        document.querySelectorAll('.map-filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.map-filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                wetlandFilterStatus = btn.getAttribute('data-filter');
+                refreshWetlandLayers();
+            });
+        });
+
+        const searchInput = document.getElementById('wetland-search');
+        if (searchInput) {
+            searchInput.addEventListener('input', () => {
+                wetlandSearchQuery = searchInput.value.trim();
+                refreshWetlandLayers();
+            });
+        }
+
+        const mapSection = document.getElementById('wetlands-map');
+        if (mapSection && 'IntersectionObserver' in window) {
+            new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) setTimeout(() => wetlandsMapInstance.invalidateSize(), 200);
+                });
+            }, { threshold: 0.15 }).observe(mapSection);
+        }
+        window.addEventListener('resize', () => wetlandsMapInstance?.invalidateSize());
+    }
+
+    initTurkeyWetlandsMap();
 
     // Initialize Language Setting
     setLanguage(currentLang);

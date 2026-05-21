@@ -1,0 +1,2907 @@
+{
+  "source": "https://www.tarimorman.gov.tr/DKMP/Menu/31/Sulak-Alanlar",
+  "total": 138,
+  "ramsar": 14,
+  "national": 59,
+  "local": 65,
+  "wetlands": [
+    {
+      "no": 1,
+      "lat": 36.633,
+      "lng": 35.377,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "563",
+      "tr": {
+        "name": "Akyatan Gölü",
+        "region": "Adana",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Akyatan Gölü",
+        "region": "Adana",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 2,
+      "lat": 36.757,
+      "lng": 35.792,
+      "type": "lagoon",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "5208",
+      "tr": {
+        "name": "Yumurtalık Lagünü",
+        "region": "Adana",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Yumurtalık Lagünü",
+        "region": "Adana",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 3,
+      "lat": 38.55,
+      "lng": 30.55,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "461",
+      "tr": {
+        "name": "Karakuyu Sazlıkları",
+        "region": "Afyonkarahisar",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Karakuyu Sazlıkları",
+        "region": "Afyonkarahisar",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 4,
+      "lat": 38.72,
+      "lng": 30.58,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "2853",
+      "tr": {
+        "name": "Karamık Sazlıkları",
+        "region": "Afyonkarahisar",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Karamık Sazlıkları",
+        "region": "Afyonkarahisar",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 5,
+      "lat": 38.35,
+      "lng": 31.2,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "580",
+      "tr": {
+        "name": "Akşehir ve Eber Gölleri",
+        "region": "Afyonkarahisar; Konya",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Akşehir ve Eber Gölleri",
+        "region": "Afyonkarahisar; Konya",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 6,
+      "lat": 38.55,
+      "lng": 34.517,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5535",
+      "tr": {
+        "name": "Acıgöl",
+        "region": "Afyonkarahisar-Denizli",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Acıgöl",
+        "region": "Afyonkarahisar-Denizli",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 7,
+      "lat": 39.55,
+      "lng": 44.08,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "576",
+      "tr": {
+        "name": "Doğubayazıt Sazlıkları",
+        "region": "Ağrı",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Doğubayazıt Sazlıkları",
+        "region": "Ağrı",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 8,
+      "lat": 39.48,
+      "lng": 43.38,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "575",
+      "tr": {
+        "name": "Sarısu Ovası Sulak Alanları",
+        "region": "Ağrı",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Sarısu Ovası Sulak Alanları",
+        "region": "Ağrı",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 9,
+      "lat": 38.35,
+      "lng": 33.85,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5479",
+      "tr": {
+        "name": "Balıklı Göl",
+        "region": "Aksaray",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Balıklı Göl",
+        "region": "Aksaray",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 10,
+      "lat": 39.55,
+      "lng": 32.75,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "1764",
+      "tr": {
+        "name": "Tol Gölü",
+        "region": "Ankara",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Tol Gölü",
+        "region": "Ankara",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 11,
+      "lat": 36.95,
+      "lng": 31.05,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "595",
+      "tr": {
+        "name": "Avlan Gölü",
+        "region": "Antalya",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Avlan Gölü",
+        "region": "Antalya",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 12,
+      "lat": 36.25,
+      "lng": 30.35,
+      "type": "lagoon",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5503",
+      "tr": {
+        "name": "Beymelek Lagünü",
+        "region": "Antalya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Beymelek Lagünü",
+        "region": "Antalya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 13,
+      "lat": 36.25,
+      "lng": 30.28,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5504",
+      "tr": {
+        "name": "Demre Çayağzı Kuşcenneti",
+        "region": "Antalya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Demre Çayağzı Kuşcenneti",
+        "region": "Antalya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 14,
+      "lat": 36.85,
+      "lng": 30.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5388",
+      "tr": {
+        "name": "Eğri Göl",
+        "region": "Antalya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Eğri Göl",
+        "region": "Antalya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 15,
+      "lat": 41.15,
+      "lng": 43.05,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "603",
+      "tr": {
+        "name": "Aktaş Gölü",
+        "region": "Ardahan",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Aktaş Gölü",
+        "region": "Ardahan",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 16,
+      "lat": 41.033,
+      "lng": 43.283,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "605",
+      "tr": {
+        "name": "Çıldır Gölü",
+        "region": "Ardahan",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Çıldır Gölü",
+        "region": "Ardahan",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 17,
+      "lat": 41.05,
+      "lng": 43.15,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "604",
+      "tr": {
+        "name": "Putka Gölü",
+        "region": "Ardahan",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Putka Gölü",
+        "region": "Ardahan",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 18,
+      "lat": 37.55,
+      "lng": 27.95,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5533",
+      "tr": {
+        "name": "Aşağı Dip Gölü",
+        "region": "Aydın",
+        "typeLabel": "Mahalli Öneme Haiz",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Aşağı Dip Gölü",
+        "region": "Aydın",
+        "typeLabel": "Mahalli Öneme Haiz",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 19,
+      "lat": 37.62,
+      "lng": 27.88,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5108",
+      "tr": {
+        "name": "Azap Gölü",
+        "region": "Aydın",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Azap Gölü",
+        "region": "Aydın",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 20,
+      "lat": 39.55,
+      "lng": 27.25,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5474",
+      "tr": {
+        "name": "Akçay Sazlıkları",
+        "region": "Balıkesir",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Akçay Sazlıkları",
+        "region": "Balıkesir",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 21,
+      "lat": 40.183,
+      "lng": 27.65,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "596",
+      "tr": {
+        "name": "Gönen Deltası",
+        "region": "Balıkesir",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Gönen Deltası",
+        "region": "Balıkesir",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 22,
+      "lat": 39.72,
+      "lng": 27.88,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "1722",
+      "tr": {
+        "name": "Karakoç Deresi Sulak Alanı",
+        "region": "Balıkesir",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Karakoç Deresi Sulak Alanı",
+        "region": "Balıkesir",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 23,
+      "lat": 40.204,
+      "lng": 27.978,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "568",
+      "tr": {
+        "name": "Manyas (Kuş) Gölü",
+        "region": "Balıkesir",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Manyas (Kuş) Gölü",
+        "region": "Balıkesir",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 24,
+      "lat": 39.58,
+      "lng": 27.92,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "1723",
+      "tr": {
+        "name": "Şeytansofrası Sulak Alanı",
+        "region": "Balıkesir",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Şeytansofrası Sulak Alanı",
+        "region": "Balıkesir",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 25,
+      "lat": 38.75,
+      "lng": 42.68,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "611",
+      "tr": {
+        "name": "Ahlat Sazlığı",
+        "region": "Bitlis",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Ahlat Sazlığı",
+        "region": "Bitlis",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 26,
+      "lat": 38.42,
+      "lng": 42.25,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "612",
+      "tr": {
+        "name": "Arin (Sodalı) Gölü",
+        "region": "Bitlis",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Arin (Sodalı) Gölü",
+        "region": "Bitlis",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 27,
+      "lat": 38.38,
+      "lng": 42.18,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "610",
+      "tr": {
+        "name": "Heybeli (Norşin) Gölü",
+        "region": "Bitlis",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Heybeli (Norşin) Gölü",
+        "region": "Bitlis",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 28,
+      "lat": 38.52,
+      "lng": 42.32,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "609",
+      "tr": {
+        "name": "Nazik Gölü",
+        "region": "Bitlis",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Nazik Gölü",
+        "region": "Bitlis",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 29,
+      "lat": 38.654,
+      "lng": 42.237,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "573",
+      "tr": {
+        "name": "Nemrut Gölü",
+        "region": "Bitlis",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Nemrut Gölü",
+        "region": "Bitlis",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 30,
+      "lat": 38.95,
+      "lng": 41.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "607",
+      "tr": {
+        "name": "İron Sazlığı",
+        "region": "Bitlis; Muş",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "İron Sazlığı",
+        "region": "Bitlis; Muş",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 31,
+      "lat": 40.58,
+      "lng": 31.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5500",
+      "tr": {
+        "name": "Aladağ Göleti",
+        "region": "Bolu",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Aladağ Göleti",
+        "region": "Bolu",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 32,
+      "lat": 40.75,
+      "lng": 32.05,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "597",
+      "tr": {
+        "name": "Yeniçağa Gölü",
+        "region": "Bolu",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Yeniçağa Gölü",
+        "region": "Bolu",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 33,
+      "lat": 37.72,
+      "lng": 30.283,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "2889",
+      "tr": {
+        "name": "Burdur Gölü",
+        "region": "Burdur",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Burdur Gölü",
+        "region": "Burdur",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 34,
+      "lat": 37.55,
+      "lng": 30.15,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "588",
+      "tr": {
+        "name": "Çorak Gölü",
+        "region": "Burdur",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Çorak Gölü",
+        "region": "Burdur",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 35,
+      "lat": 37.15,
+      "lng": 29.52,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "587",
+      "tr": {
+        "name": "Gölhisar Gölü",
+        "region": "Burdur",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Gölhisar Gölü",
+        "region": "Burdur",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 36,
+      "lat": 37.35,
+      "lng": 29.85,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "586",
+      "tr": {
+        "name": "Yarışlı Gölü",
+        "region": "Burdur",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Yarışlı Gölü",
+        "region": "Burdur",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 37,
+      "lat": 37.45,
+      "lng": 30.05,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "585",
+      "tr": {
+        "name": "Yazır Gölü",
+        "region": "Burdur",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Yazır Gölü",
+        "region": "Burdur",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 38,
+      "lat": 40.433,
+      "lng": 29.517,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "1743",
+      "tr": {
+        "name": "İznik Gölü",
+        "region": "Bursa",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "İznik Gölü",
+        "region": "Bursa",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 39,
+      "lat": 40.383,
+      "lng": 28.85,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "1738",
+      "tr": {
+        "name": "Kocaçay Deltası",
+        "region": "Bursa",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Kocaçay Deltası",
+        "region": "Bursa",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 40,
+      "lat": 40.18,
+      "lng": 28.758,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "1738",
+      "tr": {
+        "name": "Uluabat Gölü",
+        "region": "Bursa",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Uluabat Gölü",
+        "region": "Bursa",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 41,
+      "lat": 40.2,
+      "lng": 26.45,
+      "type": "lagoon",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "567",
+      "tr": {
+        "name": "Gökçeada Lagünü",
+        "region": "Çanakkale",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Gökçeada Lagünü",
+        "region": "Çanakkale",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 42,
+      "lat": 40.55,
+      "lng": 33.45,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "2906",
+      "tr": {
+        "name": "Bakkal Gölü",
+        "region": "Çankırı",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Bakkal Gölü",
+        "region": "Çankırı",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 43,
+      "lat": 37.75,
+      "lng": 29.05,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "626",
+      "tr": {
+        "name": "Işıklı Gökgöl",
+        "region": "Denizli",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Işıklı Gökgöl",
+        "region": "Denizli",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 44,
+      "lat": 40.783,
+      "lng": 31.133,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "601",
+      "tr": {
+        "name": "Efteni Gölü",
+        "region": "Düzce",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Efteni Gölü",
+        "region": "Düzce",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 45,
+      "lat": 40.98,
+      "lng": 26.52,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "505",
+      "tr": {
+        "name": "Meriç Deltası",
+        "region": "Edirne",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Meriç Deltası",
+        "region": "Edirne",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 46,
+      "lat": 38.55,
+      "lng": 39.42,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5200",
+      "tr": {
+        "name": "Güney Keban Barajı",
+        "region": "Elazığ",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Güney Keban Barajı",
+        "region": "Elazığ",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 47,
+      "lat": 38.483,
+      "lng": 39.417,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "614",
+      "tr": {
+        "name": "Hazar Gölü",
+        "region": "Elazığ",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Hazar Gölü",
+        "region": "Elazığ",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 48,
+      "lat": 39.72,
+      "lng": 39.45,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "613",
+      "tr": {
+        "name": "Ekşisu Sazlıkları",
+        "region": "Erzincan",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Ekşisu Sazlıkları",
+        "region": "Erzincan",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 49,
+      "lat": 39.92,
+      "lng": 41.18,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "2905",
+      "tr": {
+        "name": "Erzurum Bataklıkları",
+        "region": "Erzurum",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Erzurum Bataklıkları",
+        "region": "Erzurum",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 50,
+      "lat": 40.55,
+      "lng": 41.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "1793",
+      "tr": {
+        "name": "Tortum Gölü",
+        "region": "Erzurum",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Tortum Gölü",
+        "region": "Erzurum",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 51,
+      "lat": 39.45,
+      "lng": 30.52,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "1767",
+      "tr": {
+        "name": "Balıkdamı Gölü",
+        "region": "Eskişehir",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Balıkdamı Gölü",
+        "region": "Eskişehir",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 52,
+      "lat": 36.85,
+      "lng": 38.02,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5398",
+      "tr": {
+        "name": "Karkamış Taşkın Ovası",
+        "region": "Gaziantep; Şanlıurfa",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Karkamış Taşkın Ovası",
+        "region": "Gaziantep; Şanlıurfa",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 53,
+      "lat": 40.84,
+      "lng": 31.16,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "579",
+      "tr": {
+        "name": "Karagöl",
+        "region": "Giresun",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Karagöl",
+        "region": "Giresun",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 54,
+      "lat": 37.55,
+      "lng": 44.28,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5531",
+      "tr": {
+        "name": "Yüksekova(Nehil) Sazlıkları",
+        "region": "Hakkâri",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Yüksekova(Nehil) Sazlıkları",
+        "region": "Hakkâri",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 55,
+      "lat": 38.95,
+      "lng": 40.52,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "592",
+      "tr": {
+        "name": "Gölbaşı Gölü",
+        "region": "Hatay",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Gölbaşı Gölü",
+        "region": "Hatay",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 56,
+      "lat": 36.55,
+      "lng": 36.35,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "2869",
+      "tr": {
+        "name": "Haydarlar Gölü",
+        "region": "Hatay",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Haydarlar Gölü",
+        "region": "Hatay",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 57,
+      "lat": 36.15,
+      "lng": 36.08,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5204",
+      "tr": {
+        "name": "Mileyha Sulak Alanı",
+        "region": "Hatay",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Mileyha Sulak Alanı",
+        "region": "Hatay",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 58,
+      "lat": 39.88,
+      "lng": 44.72,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5390",
+      "tr": {
+        "name": "Aras Karasu Taşkınları",
+        "region": "Iğdır",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Aras Karasu Taşkınları",
+        "region": "Iğdır",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 59,
+      "lat": 38.487,
+      "lng": 26.933,
+      "type": "delta",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "617",
+      "tr": {
+        "name": "Gediz Deltası",
+        "region": "İzmir",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Gediz Deltası",
+        "region": "İzmir",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 60,
+      "lat": 38.05,
+      "lng": 27.15,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "569",
+      "tr": {
+        "name": "Gölcük Gölü",
+        "region": "İzmir",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Gölcük Gölü",
+        "region": "İzmir",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 61,
+      "lat": 40.55,
+      "lng": 43.05,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5483",
+      "tr": {
+        "name": "Aygır Gölü",
+        "region": "Kars",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Aygır Gölü",
+        "region": "Kars",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 62,
+      "lat": 40.62,
+      "lng": 43.12,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "577",
+      "tr": {
+        "name": "Çalı Gölü",
+        "region": "Kars",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Çalı Gölü",
+        "region": "Kars",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 63,
+      "lat": 40.717,
+      "lng": 42.017,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "578",
+      "tr": {
+        "name": "Kuyucuk Gölü",
+        "region": "Kars",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Kuyucuk Gölü",
+        "region": "Kars",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 64,
+      "lat": 41.35,
+      "lng": 33.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "561",
+      "tr": {
+        "name": "Asar Göleti",
+        "region": "Kastamonu",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Asar Göleti",
+        "region": "Kastamonu",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 65,
+      "lat": 41.42,
+      "lng": 33.62,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5501",
+      "tr": {
+        "name": "Tuzaklı Göleti",
+        "region": "Kastamonu",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Tuzaklı Göleti",
+        "region": "Kastamonu",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 66,
+      "lat": 38.65,
+      "lng": 35.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5489",
+      "tr": {
+        "name": "Hürmetçi Sazlığı",
+        "region": "Kayseri",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Hürmetçi Sazlığı",
+        "region": "Kayseri",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 67,
+      "lat": 38.252,
+      "lng": 35.198,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "593",
+      "tr": {
+        "name": "Sultansazlığı",
+        "region": "Kayseri",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Sultansazlığı",
+        "region": "Kayseri",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 68,
+      "lat": 39.55,
+      "lng": 41.62,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "566",
+      "tr": {
+        "name": "Tuzla Palas Gölü",
+        "region": "Kayseri",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Tuzla Palas Gölü",
+        "region": "Kayseri",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 69,
+      "lat": 39.72,
+      "lng": 33.62,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "2892",
+      "tr": {
+        "name": "Çeşnigir Sulak Alanı",
+        "region": "Kırıkkale",
+        "typeLabel": "Mahalli Öneme Haiz",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Çeşnigir Sulak Alanı",
+        "region": "Kırıkkale",
+        "typeLabel": "Mahalli Öneme Haiz",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 70,
+      "lat": 39.02,
+      "lng": 34.18,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "5532",
+      "tr": {
+        "name": "Seyfe Gölü",
+        "region": "Kırşehir",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Seyfe Gölü",
+        "region": "Kırşehir",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 71,
+      "lat": 40.75,
+      "lng": 29.75,
+      "type": "lagoon",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "215",
+      "tr": {
+        "name": "İzmit Körfezi Sulak Alanı",
+        "region": "Kocaeli",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "İzmit Körfezi Sulak Alanı",
+        "region": "Kocaeli",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 72,
+      "lat": 37.55,
+      "lng": 32.35,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5201",
+      "tr": {
+        "name": "Çavuşçu Gölü",
+        "region": "Konya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Çavuşçu Gölü",
+        "region": "Konya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 73,
+      "lat": 37.72,
+      "lng": 32.42,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5477",
+      "tr": {
+        "name": "Dipsiz Göl",
+        "region": "Konya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Dipsiz Göl",
+        "region": "Konya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 74,
+      "lat": 37.52,
+      "lng": 34.05,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5393",
+      "tr": {
+        "name": "Ereğli Sazlıkları",
+        "region": "Konya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Ereğli Sazlıkları",
+        "region": "Konya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 75,
+      "lat": 38.297,
+      "lng": 33.492,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "5478",
+      "tr": {
+        "name": "Kızören Obruğu",
+        "region": "Konya",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Kızören Obruğu",
+        "region": "Konya",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 76,
+      "lat": 37.65,
+      "lng": 32.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "572",
+      "tr": {
+        "name": "Kozanlı Gökgöl",
+        "region": "Konya",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Kozanlı Gökgöl",
+        "region": "Konya",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 77,
+      "lat": 37.583,
+      "lng": 33.617,
+      "type": "lake",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "5198",
+      "tr": {
+        "name": "Meke Maarı",
+        "region": "Konya",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Meke Maarı",
+        "region": "Konya",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 78,
+      "lat": 37.82,
+      "lng": 32.65,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5195",
+      "tr": {
+        "name": "Samsam Gölü",
+        "region": "Konya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Samsam Gölü",
+        "region": "Konya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 79,
+      "lat": 38.72,
+      "lng": 27.95,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "628",
+      "tr": {
+        "name": "Gölmarmara Gölü",
+        "region": "Manisa",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Gölmarmara Gölü",
+        "region": "Manisa",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 80,
+      "lat": 36.55,
+      "lng": 34.35,
+      "type": "lagoon",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "1814",
+      "tr": {
+        "name": "Dipsiz Lagünü",
+        "region": "Mersin",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Dipsiz Lagünü",
+        "region": "Mersin",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 81,
+      "lat": 36.447,
+      "lng": 34.022,
+      "type": "delta",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "5117",
+      "tr": {
+        "name": "Göksu Deltası",
+        "region": "Mersin",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Göksu Deltası",
+        "region": "Mersin",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 82,
+      "lat": 36.85,
+      "lng": 29.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "560",
+      "tr": {
+        "name": "Girdev Gölü",
+        "region": "Muğla",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Girdev Gölü",
+        "region": "Muğla",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 83,
+      "lat": 37.05,
+      "lng": 28.35,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5481",
+      "tr": {
+        "name": "Gölköy Gölü",
+        "region": "Muğla",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Gölköy Gölü",
+        "region": "Muğla",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 84,
+      "lat": 36.75,
+      "lng": 28.95,
+      "type": "lagoon",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5502",
+      "tr": {
+        "name": "Metruk Tuzlası",
+        "region": "Muğla",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Metruk Tuzlası",
+        "region": "Muğla",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 85,
+      "lat": 39.05,
+      "lng": 41.85,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5112",
+      "tr": {
+        "name": "Akdoğan Gölü",
+        "region": "Muş",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Akdoğan Gölü",
+        "region": "Muş",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 86,
+      "lat": 38.95,
+      "lng": 41.72,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5213",
+      "tr": {
+        "name": "Batmış Gölü",
+        "region": "Muş",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Batmış Gölü",
+        "region": "Muş",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 87,
+      "lat": 39.05,
+      "lng": 41.65,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5118",
+      "tr": {
+        "name": "Bulanık Ovası Sulak Alanları",
+        "region": "Muş",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Bulanık Ovası Sulak Alanları",
+        "region": "Muş",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 88,
+      "lat": 38.88,
+      "lng": 41.78,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "608",
+      "tr": {
+        "name": "Haçlı Gölü",
+        "region": "Muş",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Haçlı Gölü",
+        "region": "Muş",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 89,
+      "lat": 37.85,
+      "lng": 34.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5212",
+      "tr": {
+        "name": "Karagöl Çinili Göl",
+        "region": "Niğde",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Karagöl Çinili Göl",
+        "region": "Niğde",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 90,
+      "lat": 40.95,
+      "lng": 37.88,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5473",
+      "tr": {
+        "name": "Çiğ Gölü",
+        "region": "Ordu",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Çiğ Gölü",
+        "region": "Ordu",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 91,
+      "lat": 37.25,
+      "lng": 36.45,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "629",
+      "tr": {
+        "name": "Kastabala Sulak Alanı",
+        "region": "Osmaniye",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Kastabala Sulak Alanı",
+        "region": "Osmaniye",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 92,
+      "lat": 40.783,
+      "lng": 30.483,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5351",
+      "tr": {
+        "name": "Acarlar Longoz Ormanı",
+        "region": "Sakarya",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Acarlar Longoz Ormanı",
+        "region": "Sakarya",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 93,
+      "lat": 40.72,
+      "lng": 30.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "544",
+      "tr": {
+        "name": "Büyük Akgöl",
+        "region": "Sakarya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Büyük Akgöl",
+        "region": "Sakarya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 94,
+      "lat": 40.68,
+      "lng": 30.48,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "1769",
+      "tr": {
+        "name": "Keremali Gölü",
+        "region": "Sakarya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Keremali Gölü",
+        "region": "Sakarya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 95,
+      "lat": 40.7,
+      "lng": 30.52,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "1827",
+      "tr": {
+        "name": "Küçük Akgöl",
+        "region": "Sakarya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Küçük Akgöl",
+        "region": "Sakarya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 96,
+      "lat": 40.65,
+      "lng": 30.58,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "1826",
+      "tr": {
+        "name": "Taşkısığı Gölü",
+        "region": "Sakarya",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Taşkısığı Gölü",
+        "region": "Sakarya",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 97,
+      "lat": 41.722,
+      "lng": 35.875,
+      "type": "delta",
+      "ramsar": true,
+      "status": "ramsar",
+      "ekotabanId": "5482",
+      "tr": {
+        "name": "Kızılırmak Deltası",
+        "region": "Samsun",
+        "typeLabel": "Ramsar Alanı",
+        "statusShort": "Ramsar"
+      },
+      "en": {
+        "name": "Kızılırmak Deltası",
+        "region": "Samsun",
+        "typeLabel": "Ramsar Site",
+        "statusShort": "Ramsar"
+      }
+    },
+    {
+      "no": 98,
+      "lat": 40.88,
+      "lng": 35.92,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "562",
+      "tr": {
+        "name": "Ladik Gölü",
+        "region": "Samsun",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Ladik Gölü",
+        "region": "Samsun",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 99,
+      "lat": 41.25,
+      "lng": 36.35,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "583",
+      "tr": {
+        "name": "Yeşilırmak Deltası",
+        "region": "Samsun",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Yeşilırmak Deltası",
+        "region": "Samsun",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 100,
+      "lat": 41.95,
+      "lng": 34.95,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5206",
+      "tr": {
+        "name": "Aksaz Gölü",
+        "region": "Sinop",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Aksaz Gölü",
+        "region": "Sinop",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 101,
+      "lat": 39.35,
+      "lng": 37.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "627",
+      "tr": {
+        "name": "Kaz Gölü",
+        "region": "Sivas",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Kaz Gölü",
+        "region": "Sivas",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 102,
+      "lat": 39.82,
+      "lng": 37.15,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "1829",
+      "tr": {
+        "name": "Tödürge Gölü",
+        "region": "Sivas",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Tödürge Gölü",
+        "region": "Sivas",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 103,
+      "lat": 39.45,
+      "lng": 37.25,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "599",
+      "tr": {
+        "name": "Ulaş Gölü",
+        "region": "Sivas",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Ulaş Gölü",
+        "region": "Sivas",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 104,
+      "lat": 37.35,
+      "lng": 42.18,
+      "type": "delta",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "598",
+      "tr": {
+        "name": "Cizre Dicle Nehri Sulak Alanı",
+        "region": "Şırnak",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Cizre Dicle Nehri Sulak Alanı",
+        "region": "Şırnak",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 105,
+      "lat": 40.95,
+      "lng": 27.35,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5476",
+      "tr": {
+        "name": "Melen Gölü",
+        "region": "Tekirdağ",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Melen Gölü",
+        "region": "Tekirdağ",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 106,
+      "lat": 40.25,
+      "lng": 36.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5492",
+      "tr": {
+        "name": "Karaca Gölü",
+        "region": "Tokat",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Karaca Gölü",
+        "region": "Tokat",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 107,
+      "lat": 40.18,
+      "lng": 36.48,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5491",
+      "tr": {
+        "name": "Sulu Adalı Gölü",
+        "region": "Tokat",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Sulu Adalı Gölü",
+        "region": "Tokat",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 108,
+      "lat": 39.15,
+      "lng": 39.42,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5488",
+      "tr": {
+        "name": "Buyer Baba Gölü",
+        "region": "Tunceli",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Buyer Baba Gölü",
+        "region": "Tunceli",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 109,
+      "lat": 38.52,
+      "lng": 43.42,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5475",
+      "tr": {
+        "name": "Akgöl",
+        "region": "Van",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Akgöl",
+        "region": "Van",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 110,
+      "lat": 38.75,
+      "lng": 43.35,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "620",
+      "tr": {
+        "name": "Bendimahi Deltası",
+        "region": "Van",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Bendimahi Deltası",
+        "region": "Van",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 111,
+      "lat": 38.48,
+      "lng": 43.35,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "624",
+      "tr": {
+        "name": "Çelebibağ Sazlıkları",
+        "region": "Van",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Çelebibağ Sazlıkları",
+        "region": "Van",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 112,
+      "lat": 38.55,
+      "lng": 43.28,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "623",
+      "tr": {
+        "name": "Çiçekli Gölü",
+        "region": "Van",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Çiçekli Gölü",
+        "region": "Van",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 113,
+      "lat": 38.62,
+      "lng": 43.22,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5214",
+      "tr": {
+        "name": "Dönemeç Deltası",
+        "region": "Van",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Dönemeç Deltası",
+        "region": "Van",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 114,
+      "lat": 38.72,
+      "lng": 43.18,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "622",
+      "tr": {
+        "name": "Edremit Sazlıkları",
+        "region": "Van",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Edremit Sazlıkları",
+        "region": "Van",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 115,
+      "lat": 38.65,
+      "lng": 43.55,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5497",
+      "tr": {
+        "name": "Erçek Gölü",
+        "region": "Van",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Erçek Gölü",
+        "region": "Van",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 116,
+      "lat": 38.58,
+      "lng": 43.32,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "621",
+      "tr": {
+        "name": "Gövelek Gölü",
+        "region": "Van",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Gövelek Gölü",
+        "region": "Van",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 117,
+      "lat": 38.45,
+      "lng": 43.38,
+      "type": "delta",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "5499",
+      "tr": {
+        "name": "Karasu Deltası",
+        "region": "Van",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Karasu Deltası",
+        "region": "Van",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 118,
+      "lat": 38.52,
+      "lng": 43.25,
+      "type": "lake",
+      "ramsar": false,
+      "status": "national",
+      "ekotabanId": "619",
+      "tr": {
+        "name": "Turna (Keşiş) Gölü",
+        "region": "Van",
+        "typeLabel": "Ulusal Öneme Haiz Sulak Alan",
+        "statusShort": "Ulusal"
+      },
+      "en": {
+        "name": "Turna (Keşiş) Gölü",
+        "region": "Van",
+        "typeLabel": "National Important Wetland",
+        "statusShort": "National"
+      }
+    },
+    {
+      "no": 119,
+      "lat": 38.55,
+      "lng": 43.15,
+      "type": "marsh",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "618",
+      "tr": {
+        "name": "Van Sazlıkları",
+        "region": "Van",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Van Sazlıkları",
+        "region": "Van",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 120,
+      "lat": 40.65,
+      "lng": 29.35,
+      "type": "lagoon",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5498",
+      "tr": {
+        "name": "Hersek Lagünü",
+        "region": "Yalova",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Hersek Lagünü",
+        "region": "Yalova",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 121,
+      "lat": 39.55,
+      "lng": 35.25,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "625",
+      "tr": {
+        "name": "Gelingüllü Göleti",
+        "region": "Yozgat",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Gelingüllü Göleti",
+        "region": "Yozgat",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 122,
+      "lat": 39.48,
+      "lng": 35.18,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5496",
+      "tr": {
+        "name": "Üçağaç Göleti",
+        "region": "Yoz​gat",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Üçağaç Göleti",
+        "region": "Yoz​gat",
+        "typeLabel": "Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 123,
+      "lat": 41.068000000000005,
+      "lng": 40.580000000000005,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5495",
+      "tr": {
+        "name": "Akçaağıl​",
+        "region": "​Rize",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Akçaağıl​",
+        "region": "​Rize",
+        "typeLabel": "Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 124,
+      "lat": 41.072,
+      "lng": 39.81,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5536",
+      "tr": {
+        "name": "Buzlu​",
+        "region": "​Trabzon",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Buzlu​",
+        "region": "​Trabzon",
+        "typeLabel": "Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 125,
+      "lat": 40.245999999999995,
+      "lng": 26.53,
+      "type": "delta",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5538",
+      "tr": {
+        "name": "​Kumkale Deltası",
+        "region": "​Çanakkale",
+        "typeLabel": "​Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "​Kumkale Deltası",
+        "region": "​Çanakkale",
+        "typeLabel": "​Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 126,
+      "lat": 39.834,
+      "lng": 32.730000000000004,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5543",
+      "tr": {
+        "name": "Nallıhan Kuş Cenneti​",
+        "region": "Ankara​",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Nallıhan Kuş Cenneti​",
+        "region": "Ankara​",
+        "typeLabel": "Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 127,
+      "lat": 40.928,
+      "lng": 39.629999999999995,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "492",
+      "tr": {
+        "name": "​Pirömer Gölü",
+        "region": "​Trabzon",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "​Pirömer Gölü",
+        "region": "​Trabzon",
+        "typeLabel": "Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 128,
+      "lat": 37.711999999999996,
+      "lng": 38.22,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5539",
+      "tr": {
+        "name": "​Gölbaşı Gölleri",
+        "region": "​Adıyaman",
+        "typeLabel": "Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "​Gölbaşı Gölleri",
+        "region": "​Adıyaman",
+        "typeLabel": "Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 129,
+      "lat": 40.525999999999996,
+      "lng": 34.92,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "2869",
+      "tr": {
+        "name": "​Gölünyazı Gölü",
+        "region": "​Çorum",
+        "typeLabel": "​Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "​Gölünyazı Gölü",
+        "region": "​Çorum",
+        "typeLabel": "​Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 130,
+      "lat": 40.84,
+      "lng": 31.16,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5552",
+      "tr": {
+        "name": "Karagöl​",
+        "region": "Düzce​",
+        "typeLabel": "​Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Karagöl​",
+        "region": "Düzce​",
+        "typeLabel": "​Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 131,
+      "lat": 40.864000000000004,
+      "lng": 31.19,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5556",
+      "tr": {
+        "name": "​Torkul Gölü",
+        "region": "​Düzce​",
+        "typeLabel": "​​Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "​Torkul Gölü",
+        "region": "​Düzce​",
+        "typeLabel": "​​Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 132,
+      "lat": 40.198,
+      "lng": 26.47,
+      "type": "delta",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5555",
+      "tr": {
+        "name": "Kavak Deltası​​",
+        "region": "Çanakkale​",
+        "typeLabel": "​​​Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Kavak Deltası​​",
+        "region": "Çanakkale​",
+        "typeLabel": "​​​Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 133,
+      "lat": 40.222,
+      "lng": 26.5,
+      "type": "lagoon",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5571",
+      "tr": {
+        "name": "​Çardak Lagünü",
+        "region": "Çanakkale​",
+        "typeLabel": "​​​Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "​Çardak Lagünü",
+        "region": "Çanakkale​",
+        "typeLabel": "​​​Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 134,
+      "lat": 40.245999999999995,
+      "lng": 26.53,
+      "type": "lagoon",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5570",
+      "tr": {
+        "name": "​Suvla Tuz Lagünü",
+        "region": "Çanakkale​",
+        "typeLabel": "​​Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "​Suvla Tuz Lagünü",
+        "region": "Çanakkale​",
+        "typeLabel": "​​Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 135,
+      "lat": 40.044000000000004,
+      "lng": 29.86,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5572",
+      "tr": {
+        "name": "Beşgöller​",
+        "region": "​Bilecik",
+        "typeLabel": "​​​Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Beşgöller​",
+        "region": "​Bilecik",
+        "typeLabel": "​​​Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 136,
+      "lat": 38.808,
+      "lng": 40.41,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5567",
+      "tr": {
+        "name": "​Gölbaşı Gölü",
+        "region": "​​​Bingöl",
+        "typeLabel": "​​​Mahalli Öneme Haiz Sulak Alan",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "​Gölbaşı Gölü",
+        "region": "​​​Bingöl",
+        "typeLabel": "​​​Local Important Wetland",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 137,
+      "lat": 40.211999999999996,
+      "lng": 40.169999999999995,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5568",
+      "tr": {
+        "name": "Oruçbeyli Göleti​",
+        "region": "​Bayburt",
+        "typeLabel": "​​​Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Oruçbeyli Göleti​",
+        "region": "​Bayburt",
+        "typeLabel": "​​​Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    },
+    {
+      "no": 138,
+      "lat": 39.896,
+      "lng": 44.01,
+      "type": "lake",
+      "ramsar": false,
+      "status": "local",
+      "ekotabanId": "5574",
+      "tr": {
+        "name": "Uğurca Göl​",
+        "region": "Iğdır​",
+        "typeLabel": "​​​​Mahalli Öneme Haiz Sulak Alan​",
+        "statusShort": "Mahalli"
+      },
+      "en": {
+        "name": "Uğurca Göl​",
+        "region": "Iğdır​",
+        "typeLabel": "​​​​Local Important Wetland​",
+        "statusShort": "Local"
+      }
+    }
+  ]
+}
